@@ -5,6 +5,17 @@ import QuizStarts from "~/components/QuizStarts.vue";
 import QuizEnds from "~/components/QuizEnds.vue";
 
 const quiz = useQuiz();
+
+useHead({
+  title: "Soal Bahasa Indonesia - Huruf Vokal & Konsonan, Bermain & Olahraga",
+  meta: [
+    {
+      name: "Kumpulan soal tentang Huruf Vokal & Konsonan, Bermain & Olahraga",
+      content:
+        "Kumpulan soal tentang Huruf Vokal & Konsonan, Bermain & Olahraga",
+    },
+  ],
+});
 </script>
 
 <template>

@@ -1,3 +1,14 @@
+<script setup lang="ts">
+useHead({
+  title: "Itsar Bentala Akalendra",
+  meta: [
+    {
+      name: "Quiz App untuk belajar Itsar.",
+      content: "Web-app untuk berlatih mengerjakan soal ulangan.",
+    },
+  ],
+});
+</script>
 <template>
   <div
     class="min-h-screen bg-linear-to-br from-yellow-50 to-blue-50 py-16 px-4 flex flex-col items-center"

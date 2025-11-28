@@ -5,6 +5,16 @@ import QuizStarts from "~/components/QuizStarts.vue";
 import QuizEnds from "~/components/QuizEnds.vue";
 
 const quiz = useQuiz();
+
+useHead({
+  title: "Soal Bahasa Indonesia - Rukun Islam, Nabi dan Rasul",
+  meta: [
+    {
+      name: "Kumpulan soal tentang Rukun Islam, Nabi dan Rasul",
+      content: "Kumpulan soal tentang Rukun Islam, Nabi dan Rasul",
+    },
+  ],
+});
 </script>
 
 <template>

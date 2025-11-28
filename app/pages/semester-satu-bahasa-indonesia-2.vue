@@ -5,6 +5,16 @@ import QuizStarts from "~/components/QuizStarts.vue";
 import QuizEnds from "~/components/QuizEnds.vue";
 
 const quiz = useQuiz();
+
+useHead({
+  title: "Soal Bahasa Indonesia - Sikap Santun, Keluargaku",
+  meta: [
+    {
+      name: "Kumpulan soal tentang Sikap Santun, Keluargaku",
+      content: "Kumpulan soal tentang Sikap Santun, Keluargaku",
+    },
+  ],
+});
 </script>
 
 <template>

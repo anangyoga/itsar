@@ -5,6 +5,17 @@ import QuizStarts from "~/components/QuizStarts.vue";
 import QuizEnds from "~/components/QuizEnds.vue";
 
 const quiz = useQuiz();
+
+useHead({
+  title: "Soal Bahasa Indonesia - Al-Quran, Rukun Iman, Basmalah & Hamdalah",
+  meta: [
+    {
+      name: "Kumpulan soal tentang Al-Quran, Rukun Iman, Basmalah & Hamdalah",
+      content:
+        "Kumpulan soal tentang Al-Quran, Rukun Iman, Basmalah & Hamdalah",
+    },
+  ],
+});
 </script>
 
 <template>

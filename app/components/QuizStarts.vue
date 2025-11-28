@@ -25,7 +25,7 @@ const start = () => {
       class="override border border-black bg-white shadow-[4px_4px_#000] rounded-xl p-6 w-full max-w-md"
     >
       <p class="text-lg mb-4">
-        Siap mengasah otakmu? 🧠
+        Siap latihan ulangan?
         <br />Ada <span class="font-bold">{{ questions.length }}</span> soal
         menunggu kamu!
       </p>

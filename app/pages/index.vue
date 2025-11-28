@@ -14,11 +14,10 @@ useHead({
     class="min-h-screen bg-linear-to-br from-yellow-50 to-blue-50 py-16 px-4 flex flex-col items-center"
   >
     <h1 class="text-4xl font-extrabold mb-4 text-gray-800 text-center">
-      Bank Soal Anak
+      Kumpulan Latihan Soal
     </h1>
     <p class="text-gray-600 text-lg mb-12 text-center max-w-xl">
-      Pilih topik kuis yang ingin kamu kerjakan. Semua soal dibuat sederhana dan
-      menyenangkan!
+      Pilih soal latihan untuk belajar.
     </p>
 
     <div class="grid grid-cols-1 md:grid-cols-4 gap-8 w-full">

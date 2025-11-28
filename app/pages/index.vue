@@ -11,17 +11,24 @@
     </p>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-3xl">
-      <!-- Card: Matematika -->
       <NuxtLink
-        to="/soal-matematika"
+        to="/semester-satu-bahasa-indonesia"
         class="override grid h-full overflow-hidden rounded-lg border border-black bg-white text-black no-underline transition-all duration-200 ease-in-out hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[3px_3px_#000] grid-rows-[auto_1fr] p-4"
       >
         <h2 class="text-2xl font-bold text-gray-800 mb-2">
-          📘 Soal Matematika
+          📘 Soal Bahasa Indonesia 1
         </h2>
-        <p class="text-gray-600">
-          30 soal hitungan dasar. Cocok untuk pemanasan otak!
-        </p>
+        <p class="text-gray-600">Huruf Vokal & Konsonan, Bermain & Olahraga</p>
+      </NuxtLink>
+
+      <NuxtLink
+        to="/semester-satu-bahasa-indonesia-2"
+        class="override grid h-full overflow-hidden rounded-lg border border-black bg-white text-black no-underline transition-all duration-200 ease-in-out hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[3px_3px_#000] grid-rows-[auto_1fr] p-4"
+      >
+        <h2 class="text-2xl font-bold text-gray-800 mb-2">
+          📘 Soal Bahasa Indonesia 2
+        </h2>
+        <p class="text-gray-600">Sikap Santun, Keluargaku</p>
       </NuxtLink>
 
       <!-- Card: Bahasa Inggris -->

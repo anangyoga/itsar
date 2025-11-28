@@ -38,6 +38,9 @@ const start = () => {
       </button>
     </div>
 
-    <p class="text-gray-600 text-sm">Jawab sebaik mungkin ya! 🤓</p>
+    <p class="text-sm">Jawab sebaik mungkin ya! 🤓</p>
+    <NuxtLink to="/" class="underline text-gray-600 text-sm">
+      Kembali ke Halaman Utama
+    </NuxtLink>
   </div>
 </template>

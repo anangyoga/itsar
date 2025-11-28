@@ -10,7 +10,7 @@
       menyenangkan!
     </p>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-3xl">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8 w-full">
       <NuxtLink
         to="/semester-satu-bahasa-indonesia"
         class="override grid h-full overflow-hidden rounded-lg border border-black bg-white text-black no-underline transition-all duration-200 ease-in-out hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[3px_3px_#000] grid-rows-[auto_1fr] p-4"
@@ -31,17 +31,24 @@
         <p class="text-gray-600">Sikap Santun, Keluargaku</p>
       </NuxtLink>
 
-      <!-- Card: Bahasa Inggris -->
       <NuxtLink
-        to="/soal-bahasa-inggris"
+        to="/semester-satu-agama-budi-pekerti"
         class="override grid h-full overflow-hidden rounded-lg border border-black bg-white text-black no-underline transition-all duration-200 ease-in-out hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[3px_3px_#000] grid-rows-[auto_1fr] p-4"
       >
         <h2 class="text-2xl font-bold text-gray-800 mb-2">
-          📗 Soal Bahasa Inggris
+          📗 Soal Agama & BP 1
         </h2>
-        <p class="text-gray-600">
-          Vocabulary & grammar dasar dengan gaya kuis seru!
-        </p>
+        <p class="text-gray-600">Al-Quran, Rukun Iman, Basmalah & Hamdalah</p>
+      </NuxtLink>
+
+      <NuxtLink
+        to="/semester-satu-agama-budi-pekerti-2"
+        class="override grid h-full overflow-hidden rounded-lg border border-black bg-white text-black no-underline transition-all duration-200 ease-in-out hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[3px_3px_#000] grid-rows-[auto_1fr] p-4"
+      >
+        <h2 class="text-2xl font-bold text-gray-800 mb-2">
+          📗 Soal Agama & BP 2
+        </h2>
+        <p class="text-gray-600">Rukun Islam, Nabi dan Rasul</p>
       </NuxtLink>
     </div>
   </div>

@@ -86,6 +86,16 @@ useHead({
         </h2>
         <p class="text-gray-600">School, Animals, and Family</p>
       </NuxtLink>
+
+      <NuxtLink
+        to="/semester-satu-bahasa-inggris-2"
+        class="override grid h-full overflow-hidden rounded-lg border border-black bg-white text-black no-underline transition-all duration-200 ease-in-out hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[3px_3px_#000] grid-rows-[auto_1fr] p-4"
+      >
+        <h2 class="text-2xl font-bold text-gray-800 mb-2">
+          🗽 Soal Bahasa Inggris 2
+        </h2>
+        <p class="text-gray-600">Body Parts & Activity</p>
+      </NuxtLink>
     </div>
   </div>
 </template>

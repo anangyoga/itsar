@@ -136,6 +136,16 @@ useHead({
         </h2>
         <p class="text-gray-600">Penjumlahan dan Pengurangan Bilangan</p>
       </NuxtLink>
+
+      <NuxtLink
+        to="/semester-satu-matematika-3"
+        class="override grid h-full overflow-hidden rounded-lg border border-black bg-white text-black no-underline transition-all duration-200 ease-in-out hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[3px_3px_#000] grid-rows-[auto_1fr] p-4"
+      >
+        <h2 class="text-2xl font-bold text-gray-800 mb-2">
+          🔢 Soal Matematika 3
+        </h2>
+        <p class="text-gray-600">Gabungan Penjumlahan dan Pengurangan</p>
+      </NuxtLink>
     </div>
   </div>
 </template>

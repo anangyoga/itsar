@@ -1,93 +1,256 @@
 {
   "id": "bahasa-indonesia",
   "name": "Bahasa Indonesia",
-  "emoji": "📖",
+  "emoji": "📚",
   "theme": "sky",
-  "grade": "Kelas 3 SD",
-  "description": "Kosakata, ejaan, dan membaca cerita pendek.",
-  "order": 3,
+  "grade": "Kelas 2 SD",
+  "description": "Belajar membaca, memahami kata dan kalimat, tanda baca, serta cerita sederhana.",
+  "order": 6,
   "questions": [
     {
-      "id": "bi-01",
-      "question": "Lawan kata dari \"tinggi\" adalah ...",
-      "options": ["besar", "rendah", "luas", "panjang"],
-      "answer": 1,
-      "explanation": "Tinggi berpasangan dengan rendah. Lawan kata disebut antonim."
-    },
-    {
-      "id": "bi-02",
-      "question": "Kata yang memiliki arti sama dengan \"pandai\" adalah ...",
-      "options": ["rajin", "cerdas", "kuat", "ramah"],
-      "answer": 1,
-      "explanation": "Pandai dan cerdas memiliki arti yang mirip. Kata yang artinya sama disebut sinonim."
-    },
-    {
-      "id": "bi-03",
-      "passage": "Setiap pagi, Dina membantu ibu menyiram tanaman di halaman. Ia juga memberi makan ayam peliharaannya sebelum berangkat sekolah.",
-      "question": "Apa ide pokok paragraf di atas?",
+      "id": "bahasa-indonesia-01",
+      "question": "Manakah penulisan huruf kapital yang benar?",
       "options": [
-        "Dina suka bermain di halaman",
-        "Kegiatan Dina setiap pagi",
-        "Dina memelihara banyak hewan",
-        "Dina berangkat sekolah pagi-pagi"
+        "andi pergi ke sekolah.",
+        "Andi pergi ke sekolah.",
+        "andi Pergi ke sekolah.",
+        "Andi pergi Ke sekolah."
       ],
       "answer": 1,
-      "explanation": "Semua kalimat menceritakan kegiatan Dina setiap pagi sebelum berangkat sekolah."
+      "explanation": "Huruf pertama pada awal kalimat ditulis dengan huruf kapital. Nama orang, seperti Andi, juga diawali huruf kapital."
     },
     {
-      "id": "bi-04",
-      "question": "Penulisan kalimat yang benar adalah ...",
-      "options": [
-        "Ayah membaca koran di teras.",
-        "Ayah membaca koran diteras.",
-        "ayah membaca koran di teras.",
-        "Ayah membaca Koran di teras."
-      ],
-      "answer": 0,
-      "explanation": "Huruf pertama kalimat memakai huruf kapital, dan kata depan \"di\" ditulis terpisah dari tempat."
-    },
-    {
-      "id": "bi-05",
-      "question": "Kata baku yang benar adalah ...",
-      "options": ["apotik", "apotek", "apoték", "apotiek"],
-      "answer": 1,
-      "explanation": "Menurut kamus, bentuk baku yang benar adalah \"apotek\"."
-    },
-    {
-      "id": "bi-06",
-      "passage": "Angin berbisik lembut di telinga Rara. Dedaunan melambai seolah menyapanya.",
-      "question": "Kalimat \"Angin berbisik lembut di telinga Rara\" menggunakan gaya bahasa ...",
-      "options": ["hiperbola", "personifikasi", "metafora", "perumpamaan"],
-      "answer": 1,
-      "explanation": "Personifikasi memberi sifat manusia pada benda, yaitu angin yang bisa berbisik."
-    },
-    {
-      "id": "bi-07",
-      "question": "Penulisan kata depan yang benar terdapat pada ...",
-      "options": ["dirumah", "di rumah", "diRumah", "dirumahnya"],
-      "answer": 1,
-      "explanation": "\"Di\" sebagai kata depan penunjuk tempat ditulis terpisah: di rumah."
-    },
-    {
-      "id": "bi-08",
-      "question": "Satu baris dalam puisi disebut ...",
-      "options": ["bait", "larik", "rima", "irama"],
-      "answer": 1,
-      "explanation": "Larik adalah satu baris puisi. Kumpulan beberapa larik disebut bait."
-    },
-    {
-      "id": "bi-09",
-      "question": "Lawan kata dari \"hemat\" adalah ...",
-      "options": ["boros", "kikir", "rajin", "cermat"],
-      "answer": 0,
-      "explanation": "Hemat berarti tidak menghambur-hamburkan uang, lawannya boros."
-    },
-    {
-      "id": "bi-10",
-      "question": "Tanda baca yang tepat untuk mengakhiri kalimat tanya adalah ...",
-      "options": ["titik (.)", "koma (,)", "tanda tanya (?)", "tanda seru (!)"],
+      "id": "bahasa-indonesia-02",
+      "question": "Apa lawan kata dari 'besar'?",
+      "options": ["Tinggi", "Panjang", "Kecil", "Lebar"],
       "answer": 2,
-      "explanation": "Kalimat tanya diakhiri dengan tanda tanya (?)."
+      "explanation": "Kecil adalah lawan kata dari besar."
+    },
+    {
+      "id": "bahasa-indonesia-03",
+      "question": "Apa persamaan kata dari 'senang'?",
+      "options": ["Sedih", "Marah", "Takut", "Gembira"],
+      "answer": 3,
+      "explanation": "Senang dan gembira memiliki arti yang hampir sama."
+    },
+    {
+      "id": "bahasa-indonesia-04",
+      "question": "Tanda baca apa yang digunakan pada akhir kalimat tanya?",
+      "options": [
+        "Tanda tanya (?)",
+        "Tanda titik (.)",
+        "Tanda koma (,)",
+        "Tanda seru (!)"
+      ],
+      "answer": 0,
+      "explanation": "Kalimat tanya diakhiri dengan tanda tanya (?). Contohnya: Siapa namamu?"
+    },
+    {
+      "id": "bahasa-indonesia-05",
+      "question": "Manakah yang termasuk kata kerja?",
+      "options": ["Meja", "Berlari", "Merah", "Cantik"],
+      "answer": 1,
+      "explanation": "Berlari adalah kata kerja karena menunjukkan suatu kegiatan atau tindakan."
+    },
+    {
+      "id": "bahasa-indonesia-06",
+      "question": "Kata tanya yang digunakan untuk menanyakan tempat adalah ...",
+      "options": ["Siapa", "Kapan", "Di mana", "Mengapa"],
+      "answer": 2,
+      "explanation": "Di mana digunakan untuk menanyakan tempat. Contohnya: Di mana kamu tinggal?"
+    },
+    {
+      "id": "bahasa-indonesia-07",
+      "question": "Manakah kalimat yang menggunakan tanda titik dengan benar?",
+      "options": [
+        "Ibu memasak?",
+        "Ibu memasak!",
+        "Ibu memasak,",
+        "Ibu memasak."
+      ],
+      "answer": 3,
+      "explanation": "Kalimat berita biasa diakhiri dengan tanda titik (.)."
+    },
+    {
+      "id": "bahasa-indonesia-08",
+      "question": "Apa lawan kata dari 'panas'?",
+      "options": ["Dingin", "Hangat", "Terang", "Kering"],
+      "answer": 0,
+      "explanation": "Dingin adalah lawan kata dari panas."
+    },
+    {
+      "id": "bahasa-indonesia-09",
+      "question": "Manakah yang termasuk nama hewan?",
+      "options": ["Berjalan", "Kelinci", "Biru", "Cepat"],
+      "answer": 1,
+      "explanation": "Kelinci adalah nama hewan. Berjalan adalah kata kerja, sedangkan biru adalah nama warna."
+    },
+    {
+      "id": "bahasa-indonesia-10",
+      "question": "Kata tanya yang tepat untuk menanyakan waktu adalah ...",
+      "options": ["Siapa", "Apa", "Kapan", "Bagaimana"],
+      "answer": 2,
+      "explanation": "Kapan digunakan untuk menanyakan waktu. Contohnya: Kapan kamu berangkat ke sekolah?"
+    },
+    {
+      "id": "bahasa-indonesia-11",
+      "question": "Manakah penulisan nama orang yang benar?",
+      "options": ["siti aminah", "Siti aminah", "siti Aminah", "Siti Aminah"],
+      "answer": 3,
+      "explanation": "Nama orang diawali huruf kapital pada setiap unsur namanya, yaitu Siti Aminah."
+    },
+    {
+      "id": "bahasa-indonesia-12",
+      "question": "Apa lawan kata dari 'rajin'?",
+      "options": ["Malas", "Pintar", "Tekun", "Ramah"],
+      "answer": 0,
+      "explanation": "Malas adalah lawan kata dari rajin."
+    },
+    {
+      "id": "bahasa-indonesia-13",
+      "question": "Lengkapilah kalimat berikut: Adik sedang ... buku cerita.",
+      "options": ["Minum", "Membaca", "Tidur", "Berlari"],
+      "answer": 1,
+      "explanation": "Membaca adalah kata yang tepat karena buku cerita merupakan sesuatu yang dibaca."
+    },
+    {
+      "id": "bahasa-indonesia-14",
+      "question": "Kata tanya yang tepat untuk menanyakan orang adalah ...",
+      "options": ["Kapan", "Di mana", "Siapa", "Berapa"],
+      "answer": 2,
+      "explanation": "Siapa digunakan untuk menanyakan orang. Contohnya: Siapa nama gurumu?"
+    },
+    {
+      "id": "bahasa-indonesia-15",
+      "question": "Manakah kalimat yang merupakan kalimat perintah?",
+      "options": [
+        "Adik sedang tidur.",
+        "Siapa namamu?",
+        "Hari ini cerah.",
+        "Tolong tutup pintu itu!"
+      ],
+      "answer": 3,
+      "explanation": "Tolong tutup pintu itu! merupakan kalimat perintah atau permintaan kepada seseorang untuk melakukan sesuatu."
+    },
+    {
+      "id": "bahasa-indonesia-16",
+      "question": "Apa persamaan kata dari 'pandai'?",
+      "options": ["Pintar", "Bodoh", "Malas", "Lambat"],
+      "answer": 0,
+      "explanation": "Pandai dan pintar memiliki arti yang hampir sama."
+    },
+    {
+      "id": "bahasa-indonesia-17",
+      "question": "Manakah kata yang menunjukkan nama buah?",
+      "options": ["Kursi", "Mangga", "Sepatu", "Pensil"],
+      "answer": 1,
+      "explanation": "Mangga adalah nama buah yang dapat dimakan."
+    },
+    {
+      "id": "bahasa-indonesia-18",
+      "question": "Kata tanya yang tepat untuk menanyakan alasan adalah ...",
+      "options": ["Siapa", "Kapan", "Mengapa", "Di mana"],
+      "answer": 2,
+      "explanation": "Mengapa digunakan untuk menanyakan alasan. Contohnya: Mengapa kamu terlambat?"
+    },
+    {
+      "id": "bahasa-indonesia-19",
+      "question": "Susunan kata yang benar adalah ...",
+      "options": [
+        "Sekolah ke pergi Budi.",
+        "Budi sekolah pergi ke.",
+        "Pergi Budi ke sekolah.",
+        "Budi pergi ke sekolah."
+      ],
+      "answer": 3,
+      "explanation": "Susunan yang benar adalah 'Budi pergi ke sekolah.' Kalimat tersebut mudah dipahami dan memiliki susunan kata yang tepat."
+    },
+    {
+      "id": "bahasa-indonesia-20",
+      "question": "Apa lawan kata dari 'tinggi'?",
+      "options": ["Rendah", "Panjang", "Besar", "Lebar"],
+      "answer": 0,
+      "explanation": "Rendah adalah lawan kata dari tinggi."
+    },
+    {
+      "id": "bahasa-indonesia-21",
+      "question": "Bacalah kalimat berikut: 'Rina menyiram bunga setiap pagi.' Apa yang disiram Rina?",
+      "options": ["Pohon", "Bunga", "Rumput", "Sayuran"],
+      "answer": 1,
+      "explanation": "Pada kalimat tersebut, Rina menyiram bunga setiap pagi."
+    },
+    {
+      "id": "bahasa-indonesia-22",
+      "question": "Manakah yang termasuk kata sifat?",
+      "options": ["Berlari", "Memasak", "Cantik", "Menulis"],
+      "answer": 2,
+      "explanation": "Cantik adalah kata sifat yang menggambarkan keadaan atau penampilan seseorang atau sesuatu."
+    },
+    {
+      "id": "bahasa-indonesia-23",
+      "question": "Tanda baca apa yang biasanya digunakan untuk mengakhiri kalimat seruan?",
+      "options": [
+        "Tanda koma (,)",
+        "Tanda titik dua (:)",
+        "Tanda tanya (?)",
+        "Tanda seru (!)"
+      ],
+      "answer": 3,
+      "explanation": "Tanda seru (!) digunakan untuk menunjukkan seruan, perintah, atau perasaan yang kuat."
+    },
+    {
+      "id": "bahasa-indonesia-24",
+      "question": "Apa lawan kata dari 'bersih'?",
+      "options": ["Kotor", "Rapi", "Indah", "Wangi"],
+      "answer": 0,
+      "explanation": "Kotor adalah lawan kata dari bersih."
+    },
+    {
+      "id": "bahasa-indonesia-25",
+      "question": "Lengkapilah kalimat berikut: Ayah pergi ke kantor menggunakan ...",
+      "options": ["Bantal", "Kendaraan", "Piring", "Selimut"],
+      "answer": 1,
+      "explanation": "Kendaraan merupakan pilihan yang tepat karena dapat digunakan untuk pergi ke kantor."
+    },
+    {
+      "id": "bahasa-indonesia-26",
+      "question": "Bacalah cerita berikut: 'Doni bangun pagi. Ia mandi, lalu sarapan. Setelah itu, Doni pergi ke sekolah.' Ke mana Doni pergi setelah sarapan?",
+      "options": ["Ke pasar", "Ke taman", "Ke sekolah", "Ke rumah nenek"],
+      "answer": 2,
+      "explanation": "Dalam cerita tersebut, setelah sarapan Doni pergi ke sekolah."
+    },
+    {
+      "id": "bahasa-indonesia-27",
+      "question": "Manakah penulisan kata baku yang benar?",
+      "options": ["Apotik", "Ijin", "Nasehat", "Apotek"],
+      "answer": 3,
+      "explanation": "Apotek adalah bentuk baku. Kata tidak baku yang sering digunakan adalah apotik."
+    },
+    {
+      "id": "bahasa-indonesia-28",
+      "question": "Kata tanya yang tepat untuk menanyakan jumlah adalah ...",
+      "options": ["Berapa", "Siapa", "Mengapa", "Kapan"],
+      "answer": 0,
+      "explanation": "Berapa digunakan untuk menanyakan jumlah atau bilangan. Contohnya: Berapa jumlah pensilmu?"
+    },
+    {
+      "id": "bahasa-indonesia-29",
+      "question": "Bacalah kalimat berikut: 'Burung itu terbang tinggi di langit.' Apa yang dilakukan burung?",
+      "options": ["Berenang", "Terbang", "Merangkak", "Melompat"],
+      "answer": 1,
+      "explanation": "Burung itu melakukan kegiatan terbang, sesuai dengan informasi dalam kalimat."
+    },
+    {
+      "id": "bahasa-indonesia-30",
+      "question": "Apa yang sebaiknya kita ucapkan ketika menerima bantuan dari orang lain?",
+      "options": [
+        "Pergi sana!",
+        "Jangan ganggu!",
+        "Terima kasih",
+        "Saya tidak peduli"
+      ],
+      "answer": 2,
+      "explanation": "Kita mengucapkan terima kasih untuk menghargai bantuan dan kebaikan orang lain."
     }
   ]
 }

@@ -2,80 +2,230 @@
   "id": "matematika",
   "name": "Matematika",
   "emoji": "🔢",
-  "theme": "sun",
-  "grade": "Kelas 3 SD",
-  "description": "Hitung, ukur, dan pecahkan soal angka.",
-  "order": 1,
+  "theme": "sky",
+  "grade": "Kelas 2 SD",
+  "description": "Belajar berhitung, mengenal angka, waktu, pengukuran, dan bangun datar.",
+  "order": 4,
   "questions": [
     {
-      "id": "mtk-01",
-      "question": "Berapa hasil dari 7 × 8?",
-      "options": ["48", "54", "56", "63"],
-      "answer": 2,
-      "explanation": "7 × 8 = 56. Bisa juga dihitung 7 × 4 = 28, lalu 28 + 28 = 56."
-    },
-    {
-      "id": "mtk-02",
-      "question": "Hasil dari 144 ÷ 12 adalah ...",
-      "options": ["10", "12", "14", "16"],
+      "id": "matematika-01",
+      "question": "Berapakah hasil dari 25 + 14?",
+      "options": ["29", "39", "41", "49"],
       "answer": 1,
-      "explanation": "12 × 12 = 144, jadi 144 ÷ 12 = 12."
+      "explanation": "25 + 14 = 39. Puluhan: 20 + 10 = 30. Satuan: 5 + 4 = 9. Jadi, hasilnya 39."
     },
     {
-      "id": "mtk-03",
-      "question": "Ibu punya 1/2 bagian pizza. Ayah memberi 1/4 bagian lagi. Berapa bagian pizza Ibu sekarang?",
-      "options": ["2/6", "3/4", "1/6", "2/4"],
-      "answer": 1,
-      "explanation": "1/2 diubah menjadi 2/4, lalu 2/4 + 1/4 = 3/4."
+      "id": "matematika-02",
+      "question": "Berapakah hasil dari 47 - 23?",
+      "options": ["24", "34", "20", "26"],
+      "answer": 0,
+      "explanation": "47 - 23 = 24. Puluhan: 40 - 20 = 20. Satuan: 7 - 3 = 4. Jadi, hasilnya 24."
     },
     {
-      "id": "mtk-04",
-      "question": "Sebuah persegi memiliki panjang sisi 9 cm. Berapa kelilingnya?",
-      "options": ["18 cm", "27 cm", "36 cm", "81 cm"],
+      "id": "matematika-03",
+      "question": "Berapakah hasil dari 6 + 8?",
+      "options": ["12", "13", "14", "15"],
       "answer": 2,
-      "explanation": "Keliling persegi = 4 × sisi = 4 × 9 cm = 36 cm."
+      "explanation": "6 + 8 = 14. Jika memiliki 6 benda lalu ditambah 8 benda, jumlah semuanya menjadi 14."
     },
     {
-      "id": "mtk-05",
-      "question": "2.450 + 1.375 = ...",
-      "options": ["3.725", "3.815", "3.925", "3.825"],
+      "id": "matematika-04",
+      "question": "Berapakah hasil dari 35 + 27?",
+      "options": ["52", "60", "61", "62"],
       "answer": 3,
-      "explanation": "Jumlahkan dari satuan: 2.450 + 1.375 = 3.825."
+      "explanation": "35 + 27 = 62. Puluhan: 30 + 20 = 50. Satuan: 5 + 7 = 12. Jadi, 50 + 12 = 62."
     },
     {
-      "id": "mtk-06",
-      "question": "Berapa 25% dari 200?",
-      "options": ["25", "50", "75", "100"],
+      "id": "matematika-05",
+      "question": "Berapakah hasil dari 80 - 35?",
+      "options": ["45", "55", "35", "40"],
+      "answer": 0,
+      "explanation": "80 - 35 = 45. Kita dapat menghitung 80 - 30 = 50, lalu 50 - 5 = 45."
+    },
+    {
+      "id": "matematika-06",
+      "question": "Berapakah hasil dari 3 × 4?",
+      "options": ["7", "12", "10", "14"],
       "answer": 1,
-      "explanation": "25% sama dengan 1/4. Seperempat dari 200 adalah 50."
+      "explanation": "3 × 4 = 12. Perkalian ini sama dengan 4 + 4 + 4 = 12."
     },
     {
-      "id": "mtk-07",
-      "question": "Sudut yang besarnya tepat 90° disebut sudut ...",
-      "options": ["lancip", "tumpul", "siku-siku", "lurus"],
+      "id": "matematika-07",
+      "question": "Berapakah hasil dari 5 × 2?",
+      "options": ["7", "8", "10", "12"],
       "answer": 2,
-      "explanation": "Sudut siku-siku besarnya 90°, seperti sudut pada buku."
+      "explanation": "5 × 2 = 10. Artinya, ada 5 kelompok yang masing-masing berisi 2 benda, sehingga jumlahnya 10."
     },
     {
-      "id": "mtk-08",
-      "question": "3 jam sama dengan ... menit",
-      "options": ["90", "120", "180", "240"],
-      "answer": 2,
-      "explanation": "1 jam = 60 menit, jadi 3 × 60 = 180 menit."
-    },
-    {
-      "id": "mtk-09",
-      "question": "Manakah bilangan yang paling besar?",
-      "options": ["4.099", "4.909", "4.090", "4.990"],
+      "id": "matematika-08",
+      "question": "Ibu memiliki 12 permen. Permen itu dibagikan sama banyak kepada 3 anak. Berapa permen yang diterima setiap anak?",
+      "options": ["3", "6", "9", "4"],
       "answer": 3,
-      "explanation": "Bandingkan dari angka depan: 4.990 paling besar karena angka ratusannya 9."
+      "explanation": "12 ÷ 3 = 4. Dua belas permen dibagi rata kepada 3 anak, sehingga setiap anak mendapat 4 permen."
     },
     {
-      "id": "mtk-10",
-      "question": "5 kilogram sama dengan ... gram",
-      "options": ["500", "1.000", "5.000", "50.000"],
+      "id": "matematika-09",
+      "question": "Angka 6 pada bilangan 64 menempati nilai tempat apa?",
+      "options": ["Puluhan", "Satuan", "Ratusan", "Ribuan"],
+      "answer": 0,
+      "explanation": "Pada bilangan 64, angka 6 berada di tempat puluhan. Nilainya adalah 60."
+    },
+    {
+      "id": "matematika-10",
+      "question": "Berapakah nilai angka 8 pada bilangan 83?",
+      "options": ["8", "80", "3", "800"],
+      "answer": 1,
+      "explanation": "Angka 8 pada bilangan 83 berada di tempat puluhan, sehingga nilainya adalah 80."
+    },
+    {
+      "id": "matematika-11",
+      "question": "Bilangan manakah yang paling besar?",
+      "options": ["56", "65", "59", "62"],
+      "answer": 1,
+      "explanation": "65 adalah bilangan terbesar. Angka puluhannya 6, lebih besar daripada angka puluhan pada 56 dan 59. Dibandingkan dengan 62, angka satuannya 5 lebih besar daripada 2."
+    },
+    {
+      "id": "matematika-12",
+      "question": "Bilangan setelah 99 adalah ...",
+      "options": ["98", "100", "101", "90"],
+      "answer": 1,
+      "explanation": "Bilangan setelah 99 adalah 100. Setelah sembilan puluh sembilan, kita masuk ke seratus."
+    },
+    {
+      "id": "matematika-13",
+      "question": "Berapakah hasil dari 100 - 40?",
+      "options": ["40", "50", "60", "70"],
       "answer": 2,
-      "explanation": "1 kilogram = 1.000 gram, jadi 5 × 1.000 = 5.000 gram."
+      "explanation": "100 - 40 = 60. Jika 100 dikurangi 4 puluhan, tersisa 6 puluhan atau 60."
+    },
+    {
+      "id": "matematika-14",
+      "question": "Rani mempunyai 18 pensil. Ia membeli lagi 7 pensil. Berapa jumlah pensil Rani sekarang?",
+      "options": ["23", "24", "26", "25"],
+      "answer": 3,
+      "explanation": "18 + 7 = 25. Jadi, jumlah pensil Rani sekarang adalah 25 pensil."
+    },
+    {
+      "id": "matematika-15",
+      "question": "Budi mempunyai 30 kelereng. Ia memberikan 12 kelereng kepada temannya. Berapa kelereng Budi yang tersisa?",
+      "options": ["18", "22", "20", "16"],
+      "answer": 0,
+      "explanation": "30 - 12 = 18. Jadi, kelereng Budi yang tersisa adalah 18."
+    },
+    {
+      "id": "matematika-16",
+      "question": "Satu minggu terdiri dari berapa hari?",
+      "options": ["5 hari", "7 hari", "6 hari", "8 hari"],
+      "answer": 1,
+      "explanation": "Satu minggu terdiri dari 7 hari, yaitu Senin, Selasa, Rabu, Kamis, Jumat, Sabtu, dan Minggu."
+    },
+    {
+      "id": "matematika-17",
+      "question": "Jarum pendek menunjuk angka 3 dan jarum panjang menunjuk angka 12. Pukul berapakah itu?",
+      "options": ["Pukul 12", "Pukul 6", "Pukul 3", "Pukul 9"],
+      "answer": 2,
+      "explanation": "Jarum pendek pada angka 3 dan jarum panjang pada angka 12 menunjukkan pukul 03.00."
+    },
+    {
+      "id": "matematika-18",
+      "question": "Panjang pensil adalah 15 cm. Panjang penggaris adalah 20 cm. Benda manakah yang lebih panjang?",
+      "options": [
+        "Pensil",
+        "Keduanya sama panjang",
+        "Tidak dapat diketahui",
+        "Penggaris"
+      ],
+      "answer": 3,
+      "explanation": "Penggaris lebih panjang karena 20 cm lebih besar daripada 15 cm."
+    },
+    {
+      "id": "matematika-19",
+      "question": "Berapakah hasil dari 1 meter sama dengan ... sentimeter?",
+      "options": ["100 cm", "10 cm", "50 cm", "1.000 cm"],
+      "answer": 0,
+      "explanation": "1 meter sama dengan 100 sentimeter."
+    },
+    {
+      "id": "matematika-20",
+      "question": "Bangun datar yang memiliki 3 sisi disebut ...",
+      "options": ["Persegi", "Segitiga", "Lingkaran", "Persegi panjang"],
+      "answer": 1,
+      "explanation": "Segitiga memiliki 3 sisi dan 3 sudut."
+    },
+    {
+      "id": "matematika-21",
+      "question": "Bangun datar yang memiliki 4 sisi sama panjang dan 4 sudut siku-siku adalah ...",
+      "options": ["Segitiga", "Lingkaran", "Persegi", "Oval"],
+      "answer": 2,
+      "explanation": "Persegi memiliki 4 sisi sama panjang dan 4 sudut siku-siku."
+    },
+    {
+      "id": "matematika-22",
+      "question": "Berapakah jumlah sisi pada bangun datar persegi panjang?",
+      "options": ["2 sisi", "3 sisi", "5 sisi", "4 sisi"],
+      "answer": 3,
+      "explanation": "Persegi panjang memiliki 4 sisi. Dua pasang sisinya sama panjang."
+    },
+    {
+      "id": "matematika-23",
+      "question": "Ada 4 piring. Setiap piring berisi 3 kue. Berapa jumlah seluruh kue?",
+      "options": ["12 kue", "7 kue", "9 kue", "15 kue"],
+      "answer": 0,
+      "explanation": "4 × 3 = 12. Empat piring yang masing-masing berisi 3 kue memiliki total 12 kue."
+    },
+    {
+      "id": "matematika-24",
+      "question": "Bilangan berikutnya dari pola 2, 4, 6, 8, ... adalah ...",
+      "options": ["9", "10", "11", "12"],
+      "answer": 1,
+      "explanation": "Pola bilangan bertambah 2 setiap langkah. Setelah 8, bilangan berikutnya adalah 10."
+    },
+    {
+      "id": "matematika-25",
+      "question": "Bilangan ganjil di bawah ini adalah ...",
+      "options": ["12", "24", "17", "30"],
+      "answer": 2,
+      "explanation": "17 adalah bilangan ganjil karena angka satuannya 7. Bilangan ganjil berakhiran 1, 3, 5, 7, atau 9."
+    },
+    {
+      "id": "matematika-26",
+      "question": "Bilangan genap di bawah ini adalah ...",
+      "options": ["11", "15", "23", "28"],
+      "answer": 3,
+      "explanation": "28 adalah bilangan genap karena angka satuannya 8. Bilangan genap berakhiran 0, 2, 4, 6, atau 8."
+    },
+    {
+      "id": "matematika-27",
+      "question": "Ayah membeli 2 kantong jeruk. Setiap kantong berisi 5 jeruk. Berapa jumlah jeruk semuanya?",
+      "options": ["10 jeruk", "7 jeruk", "8 jeruk", "12 jeruk"],
+      "answer": 0,
+      "explanation": "2 × 5 = 10. Jadi, jumlah jeruk semuanya adalah 10."
+    },
+    {
+      "id": "matematika-28",
+      "question": "Siti memiliki uang Rp5.000. Ia membeli roti seharga Rp2.000. Berapa uang Siti yang tersisa?",
+      "options": ["Rp2.000", "Rp3.000", "Rp4.000", "Rp1.000"],
+      "answer": 1,
+      "explanation": "Rp5.000 - Rp2.000 = Rp3.000. Jadi, uang Siti yang tersisa adalah Rp3.000."
+    },
+    {
+      "id": "matematika-29",
+      "question": "Berapakah hasil dari 10 + 10 + 10?",
+      "options": ["20", "40", "30", "10"],
+      "answer": 2,
+      "explanation": "10 + 10 + 10 = 30. Tiga kelompok yang masing-masing berisi 10 berjumlah 30."
+    },
+    {
+      "id": "matematika-30",
+      "question": "Di dalam bus ada 24 penumpang. Di halte, 6 penumpang turun dan 4 penumpang naik. Berapa penumpang di dalam bus sekarang?",
+      "options": [
+        "18 penumpang",
+        "20 penumpang",
+        "26 penumpang",
+        "22 penumpang"
+      ],
+      "answer": 3,
+      "explanation": "24 - 6 = 18. Kemudian 18 + 4 = 22. Jadi, ada 22 penumpang di dalam bus."
     }
   ]
 }

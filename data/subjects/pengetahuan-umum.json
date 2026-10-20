@@ -1,0 +1,256 @@
+{
+  "id": "pengetahuan-umum",
+  "name": "Pengetahuan Umum",
+  "emoji": "🌎",
+  "theme": "sky",
+  "grade": "Kelas 2 SD",
+  "description": "Kenali alam, hewan, tubuh manusia, Indonesia, dan kehidupan sehari-hari.",
+  "order": 5,
+  "questions": [
+    {
+      "id": "pengetahuan-umum-01",
+      "question": "Apa nama planet tempat kita tinggal?",
+      "options": ["Mars", "Bumi", "Jupiter", "Venus"],
+      "answer": 1,
+      "explanation": "Bumi adalah planet tempat manusia, hewan, dan tumbuhan hidup."
+    },
+    {
+      "id": "pengetahuan-umum-02",
+      "question": "Apa yang menjadi sumber cahaya dan panas utama bagi Bumi?",
+      "options": ["Bulan", "Bintang laut", "Matahari", "Awan"],
+      "answer": 2,
+      "explanation": "Matahari memberikan cahaya dan panas yang dibutuhkan oleh kehidupan di Bumi."
+    },
+    {
+      "id": "pengetahuan-umum-03",
+      "question": "Hewan manakah yang menghasilkan susu untuk anaknya?",
+      "options": ["Ayam", "Ikan", "Kupu-kupu", "Sapi"],
+      "answer": 3,
+      "explanation": "Sapi adalah mamalia yang menghasilkan susu untuk anaknya. Susu sapi juga sering dikonsumsi manusia."
+    },
+    {
+      "id": "pengetahuan-umum-04",
+      "question": "Apa nama alat yang digunakan untuk menunjukkan arah mata angin?",
+      "options": ["Kompas", "Termometer", "Penggaris", "Jam"],
+      "answer": 0,
+      "explanation": "Kompas digunakan untuk membantu menentukan arah, seperti utara, selatan, timur, dan barat."
+    },
+    {
+      "id": "pengetahuan-umum-05",
+      "question": "Apa warna bendera Indonesia?",
+      "options": [
+        "Merah dan biru",
+        "Merah dan putih",
+        "Putih dan hijau",
+        "Kuning dan merah"
+      ],
+      "answer": 1,
+      "explanation": "Bendera Indonesia berwarna merah di bagian atas dan putih di bagian bawah."
+    },
+    {
+      "id": "pengetahuan-umum-06",
+      "question": "Apa nama ibu kota Indonesia saat ini?",
+      "options": ["Bandung", "Surabaya", "Jakarta", "Medan"],
+      "answer": 2,
+      "explanation": "Jakarta merupakan ibu kota Indonesia. Indonesia juga sedang mengembangkan Ibu Kota Nusantara (IKN) sebagai ibu kota baru."
+    },
+    {
+      "id": "pengetahuan-umum-07",
+      "question": "Hewan apakah yang dikenal memiliki belalai panjang?",
+      "options": ["Kuda", "Kelinci", "Kambing", "Gajah"],
+      "answer": 3,
+      "explanation": "Gajah memiliki belalai yang digunakan untuk mengambil makanan, minum, dan membantu berbagai aktivitas."
+    },
+    {
+      "id": "pengetahuan-umum-08",
+      "question": "Bagian tumbuhan manakah yang biasanya menyerap air dari tanah?",
+      "options": ["Akar", "Bunga", "Buah", "Daun"],
+      "answer": 0,
+      "explanation": "Akar menyerap air dan mineral dari tanah untuk membantu tumbuhan tumbuh."
+    },
+    {
+      "id": "pengetahuan-umum-09",
+      "question": "Apa yang harus kita lakukan sebelum makan?",
+      "options": [
+        "Bermain tanah",
+        "Mencuci tangan",
+        "Membuang sampah sembarangan",
+        "Tidur"
+      ],
+      "answer": 1,
+      "explanation": "Mencuci tangan dengan sabun membantu menghilangkan kuman dan menjaga kebersihan sebelum makan."
+    },
+    {
+      "id": "pengetahuan-umum-10",
+      "question": "Hewan manakah yang hidup di air dan bernapas menggunakan insang?",
+      "options": ["Kucing", "Burung", "Ikan", "Ayam"],
+      "answer": 2,
+      "explanation": "Ikan menggunakan insang untuk mengambil oksigen dari air."
+    },
+    {
+      "id": "pengetahuan-umum-11",
+      "question": "Apa nama satelit alami Bumi?",
+      "options": ["Matahari", "Mars", "Awan", "Bulan"],
+      "answer": 3,
+      "explanation": "Bulan adalah satelit alami Bumi yang mengelilingi Bumi."
+    },
+    {
+      "id": "pengetahuan-umum-12",
+      "question": "Apa yang kita hirup untuk bernapas?",
+      "options": ["Udara", "Pasir", "Tanah", "Minyak"],
+      "answer": 0,
+      "explanation": "Manusia menghirup udara yang mengandung oksigen untuk membantu tubuh tetap hidup."
+    },
+    {
+      "id": "pengetahuan-umum-13",
+      "question": "Apa nama hewan yang mengalami perubahan dari ulat menjadi kupu-kupu?",
+      "options": ["Katak", "Kupu-kupu", "Ayam", "Kucing"],
+      "answer": 1,
+      "explanation": "Kupu-kupu mengalami metamorfosis. Tahap hidupnya dimulai dari telur, ulat, kepompong, lalu kupu-kupu dewasa."
+    },
+    {
+      "id": "pengetahuan-umum-14",
+      "question": "Apa nama tempat untuk meminjam dan membaca buku?",
+      "options": ["Pasar", "Stasiun", "Perpustakaan", "Bandara"],
+      "answer": 2,
+      "explanation": "Perpustakaan adalah tempat untuk membaca dan biasanya meminjam buku."
+    },
+    {
+      "id": "pengetahuan-umum-15",
+      "question": "Kendaraan manakah yang berjalan di atas rel?",
+      "options": ["Mobil", "Sepeda", "Bus", "Kereta api"],
+      "answer": 3,
+      "explanation": "Kereta api berjalan di atas rel dan digunakan untuk mengangkut penumpang atau barang."
+    },
+    {
+      "id": "pengetahuan-umum-16",
+      "question": "Apa yang sebaiknya kita lakukan terhadap sampah agar lingkungan tetap bersih?",
+      "options": [
+        "Membuangnya ke tempat sampah",
+        "Membuangnya ke sungai",
+        "Meninggalkannya di jalan",
+        "Membuangnya ke halaman tetangga"
+      ],
+      "answer": 0,
+      "explanation": "Membuang sampah pada tempatnya membantu menjaga kebersihan lingkungan dan mencegah pencemaran."
+    },
+    {
+      "id": "pengetahuan-umum-17",
+      "question": "Apa nama indra yang digunakan untuk mendengar suara?",
+      "options": ["Mata", "Telinga", "Hidung", "Lidah"],
+      "answer": 1,
+      "explanation": "Telinga adalah indra pendengaran yang membantu kita mendengar suara."
+    },
+    {
+      "id": "pengetahuan-umum-18",
+      "question": "Hewan manakah yang dikenal sebagai raja hutan?",
+      "options": ["Kambing", "Kelinci", "Singa", "Bebek"],
+      "answer": 2,
+      "explanation": "Singa sering dijuluki raja hutan, meskipun singa umumnya hidup di padang rumput dan sabana."
+    },
+    {
+      "id": "pengetahuan-umum-19",
+      "question": "Apa nama tempat yang luas dan berisi banyak air asin?",
+      "options": ["Kolam", "Sumur", "Danau air tawar", "Laut"],
+      "answer": 3,
+      "explanation": "Laut adalah perairan luas yang airnya mengandung garam."
+    },
+    {
+      "id": "pengetahuan-umum-20",
+      "question": "Berapa jumlah hari dalam satu tahun biasa?",
+      "options": ["365 hari", "300 hari", "200 hari", "400 hari"],
+      "answer": 0,
+      "explanation": "Satu tahun biasa memiliki 365 hari. Tahun kabisat memiliki 366 hari."
+    },
+    {
+      "id": "pengetahuan-umum-21",
+      "question": "Apa nama rumah adat tradisional dari Sumatera Barat?",
+      "options": [
+        "Rumah Joglo",
+        "Rumah Gadang",
+        "Rumah Honai",
+        "Rumah Tongkonan"
+      ],
+      "answer": 1,
+      "explanation": "Rumah Gadang adalah rumah adat masyarakat Minangkabau di Sumatera Barat."
+    },
+    {
+      "id": "pengetahuan-umum-22",
+      "question": "Apa nama hewan yang menghasilkan madu?",
+      "options": ["Semut", "Lalat", "Lebah", "Nyamuk"],
+      "answer": 2,
+      "explanation": "Lebah mengumpulkan nektar dari bunga dan mengolahnya menjadi madu."
+    },
+    {
+      "id": "pengetahuan-umum-23",
+      "question": "Apa yang biasanya turun dari awan ketika hujan?",
+      "options": ["Pasir", "Daun", "Batu bata", "Tetesan air"],
+      "answer": 3,
+      "explanation": "Hujan terjadi ketika tetesan air di awan menjadi cukup berat dan jatuh ke permukaan Bumi."
+    },
+    {
+      "id": "pengetahuan-umum-24",
+      "question": "Apa nama profesi orang yang mengajar murid di sekolah?",
+      "options": ["Guru", "Dokter", "Pilot", "Petani"],
+      "answer": 0,
+      "explanation": "Guru bertugas mengajar dan membantu murid belajar di sekolah."
+    },
+    {
+      "id": "pengetahuan-umum-25",
+      "question": "Alat apakah yang digunakan dokter untuk mendengarkan detak jantung?",
+      "options": ["Mikroskop", "Stetoskop", "Teleskop", "Kalkulator"],
+      "answer": 1,
+      "explanation": "Stetoskop membantu dokter mendengarkan suara dari dalam tubuh, termasuk detak jantung."
+    },
+    {
+      "id": "pengetahuan-umum-26",
+      "question": "Apa nama olahraga yang menggunakan raket dan kok?",
+      "options": ["Sepak bola", "Bola basket", "Bulu tangkis", "Renang"],
+      "answer": 2,
+      "explanation": "Bulu tangkis dimainkan menggunakan raket dan kok atau shuttlecock."
+    },
+    {
+      "id": "pengetahuan-umum-27",
+      "question": "Apa yang harus dilakukan ketika lampu lalu lintas berwarna merah?",
+      "options": [
+        "Mempercepat kendaraan",
+        "Terus berjalan tanpa melihat",
+        "Berlari menyeberang",
+        "Berhenti"
+      ],
+      "answer": 3,
+      "explanation": "Lampu merah berarti berhenti. Kita harus mematuhi aturan lalu lintas demi keselamatan."
+    },
+    {
+      "id": "pengetahuan-umum-28",
+      "question": "Hewan manakah yang memiliki kantong untuk membawa anaknya?",
+      "options": ["Kanguru", "Gajah", "Kuda", "Harimau"],
+      "answer": 0,
+      "explanation": "Kanguru adalah mamalia berkantung. Anak kanguru tumbuh dan berkembang di dalam kantong induknya."
+    },
+    {
+      "id": "pengetahuan-umum-29",
+      "question": "Apa manfaat utama tumbuhan bagi manusia?",
+      "options": [
+        "Membuat udara kotor",
+        "Menghasilkan oksigen dan menyediakan makanan",
+        "Menghilangkan semua air",
+        "Membuat tanah selalu kering"
+      ],
+      "answer": 1,
+      "explanation": "Tumbuhan membantu menghasilkan oksigen dan menjadi sumber makanan bagi manusia serta hewan."
+    },
+    {
+      "id": "pengetahuan-umum-30",
+      "question": "Apa yang sebaiknya kita lakukan jika melihat teman terjatuh dan terluka?",
+      "options": [
+        "Menertawakannya",
+        "Meninggalkannya sendirian",
+        "Membantu dan memanggil orang dewasa",
+        "Menyembunyikan barangnya"
+      ],
+      "answer": 2,
+      "explanation": "Kita sebaiknya membantu teman dengan aman dan memanggil guru atau orang dewasa agar teman mendapatkan pertolongan."
+    }
+  ]
+}

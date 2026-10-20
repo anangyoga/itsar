@@ -1,0 +1,226 @@
+{
+  "id": "english",
+  "name": "Bahasa Inggris",
+  "emoji": "🇬🇧",
+  "theme": "sky",
+  "grade": "Kelas 2 SD",
+  "description": "Belajar kosakata, warna, angka, keluarga, dan kalimat sederhana dalam bahasa Inggris.",
+  "order": 3,
+  "questions": [
+    {
+      "id": "english-01",
+      "question": "What is the English word for 'kucing'?",
+      "options": ["Dog", "Cat", "Bird", "Fish"],
+      "answer": 1,
+      "explanation": "Cat artinya kucing. Dog artinya anjing, bird artinya burung, dan fish artinya ikan."
+    },
+    {
+      "id": "english-02",
+      "question": "What color is the sun usually drawn?",
+      "options": ["Blue", "Green", "Yellow", "Black"],
+      "answer": 2,
+      "explanation": "Yellow artinya kuning. Matahari biasanya digambarkan berwarna kuning."
+    },
+    {
+      "id": "english-03",
+      "question": "How do you say 'apel' in English?",
+      "options": ["Apple", "Orange", "Banana", "Grape"],
+      "answer": 0,
+      "explanation": "Apple artinya apel. Orange artinya jeruk, banana artinya pisang, dan grape artinya anggur."
+    },
+    {
+      "id": "english-04",
+      "question": "What number comes after five?",
+      "options": ["Three", "Four", "Seven", "Six"],
+      "answer": 3,
+      "explanation": "Six artinya enam. Urutan angka dalam bahasa Inggris adalah four, five, six, seven."
+    },
+    {
+      "id": "english-05",
+      "question": "Which body part do we use to see?",
+      "options": ["Ears", "Eyes", "Nose", "Hands"],
+      "answer": 1,
+      "explanation": "Eyes artinya mata. Kita menggunakan mata untuk melihat."
+    },
+    {
+      "id": "english-06",
+      "question": "What is the English word for 'buku'?",
+      "options": ["Book", "Bag", "Pencil", "Ruler"],
+      "answer": 0,
+      "explanation": "Book artinya buku. Bag artinya tas, pencil artinya pensil, dan ruler artinya penggaris."
+    },
+    {
+      "id": "english-07",
+      "question": "How do you greet someone in the morning?",
+      "options": ["Good night", "Goodbye", "Good morning", "Good evening"],
+      "answer": 2,
+      "explanation": "Good morning berarti selamat pagi. Sapaan ini digunakan pada pagi hari."
+    },
+    {
+      "id": "english-08",
+      "question": "What is the opposite of 'big'?",
+      "options": ["Tall", "Long", "Short", "Small"],
+      "answer": 3,
+      "explanation": "Small artinya kecil, kebalikan dari big yang berarti besar."
+    },
+    {
+      "id": "english-09",
+      "question": "Which animal says 'meow'?",
+      "options": ["Cow", "Cat", "Duck", "Horse"],
+      "answer": 1,
+      "explanation": "Cat adalah kucing. Kucing biasanya mengeluarkan suara 'meow'."
+    },
+    {
+      "id": "english-10",
+      "question": "How do you say 'ibu' in English?",
+      "options": ["Father", "Brother", "Mother", "Uncle"],
+      "answer": 2,
+      "explanation": "Mother artinya ibu. Father artinya ayah, brother artinya saudara laki-laki, dan uncle artinya paman."
+    },
+    {
+      "id": "english-11",
+      "question": "Which one is a fruit?",
+      "options": ["Carrot", "Potato", "Spinach", "Mango"],
+      "answer": 3,
+      "explanation": "Mango artinya mangga, yaitu buah. Carrot, potato, dan spinach termasuk sayuran."
+    },
+    {
+      "id": "english-12",
+      "question": "What is the English word for 'merah'?",
+      "options": ["Red", "Blue", "White", "Brown"],
+      "answer": 0,
+      "explanation": "Red artinya merah."
+    },
+    {
+      "id": "english-13",
+      "question": "Complete the sentence: I ___ a student.",
+      "options": ["am", "is", "are", "be"],
+      "answer": 0,
+      "explanation": "Kalimat yang benar adalah 'I am a student' yang berarti saya seorang siswa. Kata I berpasangan dengan am."
+    },
+    {
+      "id": "english-14",
+      "question": "What do we use to write on paper?",
+      "options": ["Chair", "Pencil", "Plate", "Spoon"],
+      "answer": 1,
+      "explanation": "Pencil artinya pensil. Kita menggunakan pensil untuk menulis di kertas."
+    },
+    {
+      "id": "english-15",
+      "question": "How many days are there in a week?",
+      "options": ["Five", "Six", "Seven", "Eight"],
+      "answer": 2,
+      "explanation": "There are seven days in a week. Artinya, ada tujuh hari dalam satu minggu."
+    },
+    {
+      "id": "english-16",
+      "question": "Which animal can fly?",
+      "options": ["Elephant", "Rabbit", "Tiger", "Bird"],
+      "answer": 3,
+      "explanation": "Bird artinya burung. Burung pada umumnya dapat terbang."
+    },
+    {
+      "id": "english-17",
+      "question": "What is the English word for 'air' (yang kita minum)?",
+      "options": ["Water", "Milk", "Juice", "Tea"],
+      "answer": 0,
+      "explanation": "Water artinya air minum. Milk artinya susu, juice artinya jus, dan tea artinya teh."
+    },
+    {
+      "id": "english-18",
+      "question": "Complete the sentence: She ___ my sister.",
+      "options": ["am", "is", "are", "be"],
+      "answer": 1,
+      "explanation": "Kalimat yang benar adalah 'She is my sister' yang berarti dia adalah saudara perempuan saya. She berpasangan dengan is."
+    },
+    {
+      "id": "english-19",
+      "question": "What is the opposite of 'hot'?",
+      "options": ["Warm", "Big", "Cold", "Fast"],
+      "answer": 2,
+      "explanation": "Cold artinya dingin, kebalikan dari hot yang berarti panas."
+    },
+    {
+      "id": "english-20",
+      "question": "Which one is a school object?",
+      "options": ["Lion", "Banana", "Shirt", "Eraser"],
+      "answer": 3,
+      "explanation": "Eraser artinya penghapus. Penghapus merupakan salah satu perlengkapan sekolah."
+    },
+    {
+      "id": "english-21",
+      "question": "How do you say 'terima kasih' in English?",
+      "options": ["Thank you", "I'm sorry", "Good morning", "Excuse me"],
+      "answer": 0,
+      "explanation": "Thank you berarti terima kasih. Kita mengucapkannya saat ingin berterima kasih kepada seseorang."
+    },
+    {
+      "id": "english-22",
+      "question": "Which animal lives in water and has fins?",
+      "options": ["Chicken", "Fish", "Cat", "Goat"],
+      "answer": 1,
+      "explanation": "Fish artinya ikan. Ikan hidup di air dan memiliki sirip."
+    },
+    {
+      "id": "english-23",
+      "question": "What is the English word for 'kaki'?",
+      "options": ["Head", "Hand", "Foot", "Nose"],
+      "answer": 2,
+      "explanation": "Foot artinya kaki. Head artinya kepala, hand artinya tangan, dan nose artinya hidung."
+    },
+    {
+      "id": "english-24",
+      "question": "Complete the sentence: They ___ happy.",
+      "options": ["am", "is", "be", "are"],
+      "answer": 3,
+      "explanation": "Kalimat yang benar adalah 'They are happy' yang berarti mereka bahagia. They berpasangan dengan are."
+    },
+    {
+      "id": "english-25",
+      "question": "What do we say when we meet someone for the first time in the day?",
+      "options": ["Hello", "Good night", "I'm sorry", "Thank you"],
+      "answer": 0,
+      "explanation": "Hello artinya halo. Kita bisa menggunakannya untuk menyapa seseorang."
+    },
+    {
+      "id": "english-26",
+      "question": "Which word means 'makan'?",
+      "options": ["Sleep", "Eat", "Run", "Read"],
+      "answer": 1,
+      "explanation": "Eat artinya makan. Sleep artinya tidur, run artinya berlari, dan read artinya membaca."
+    },
+    {
+      "id": "english-27",
+      "question": "What is the English word for 'sekolah'?",
+      "options": ["Hospital", "Market", "School", "Library"],
+      "answer": 2,
+      "explanation": "School artinya sekolah. Hospital artinya rumah sakit, market artinya pasar, dan library artinya perpustakaan."
+    },
+    {
+      "id": "english-28",
+      "question": "Which sentence is correct?",
+      "options": [
+        "He are my friend.",
+        "He am my friend.",
+        "He be my friend.",
+        "He is my friend."
+      ],
+      "answer": 3,
+      "explanation": "Kalimat yang benar adalah 'He is my friend' yang berarti dia adalah teman saya. He berpasangan dengan is."
+    },
+    {
+      "id": "english-29",
+      "question": "What is the English word for 'gajah'?",
+      "options": ["Elephant", "Giraffe", "Monkey", "Rabbit"],
+      "answer": 0,
+      "explanation": "Elephant artinya gajah. Giraffe artinya jerapah, monkey artinya monyet, dan rabbit artinya kelinci."
+    },
+    {
+      "id": "english-30",
+      "question": "What should you say when someone says 'Thank you'?",
+      "options": ["Good night", "You're welcome", "I'm hungry", "Goodbye"],
+      "answer": 1,
+      "explanation": "You're welcome berarti sama-sama. Ungkapan ini digunakan untuk membalas ucapan terima kasih."
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "id": "matematika",
+  "name": "Matematika",
+  "emoji": "🔢",
+  "theme": "sun",
+  "grade": "Kelas 3 SD",
+  "description": "Hitung, ukur, dan pecahkan soal angka.",
+  "order": 1,
+  "questions": [
+    {
+      "id": "mtk-01",
+      "question": "Berapa hasil dari 7 × 8?",
+      "options": ["48", "54", "56", "63"],
+      "answer": 2,
+      "explanation": "7 × 8 = 56. Bisa juga dihitung 7 × 4 = 28, lalu 28 + 28 = 56."
+    },
+    {
+      "id": "mtk-02",
+      "question": "Hasil dari 144 ÷ 12 adalah ...",
+      "options": ["10", "12", "14", "16"],
+      "answer": 1,
+      "explanation": "12 × 12 = 144, jadi 144 ÷ 12 = 12."
+    },
+    {
+      "id": "mtk-03",
+      "question": "Ibu punya 1/2 bagian pizza. Ayah memberi 1/4 bagian lagi. Berapa bagian pizza Ibu sekarang?",
+      "options": ["2/6", "3/4", "1/6", "2/4"],
+      "answer": 1,
+      "explanation": "1/2 diubah menjadi 2/4, lalu 2/4 + 1/4 = 3/4."
+    },
+    {
+      "id": "mtk-04",
+      "question": "Sebuah persegi memiliki panjang sisi 9 cm. Berapa kelilingnya?",
+      "options": ["18 cm", "27 cm", "36 cm", "81 cm"],
+      "answer": 2,
+      "explanation": "Keliling persegi = 4 × sisi = 4 × 9 cm = 36 cm."
+    },
+    {
+      "id": "mtk-05",
+      "question": "2.450 + 1.375 = ...",
+      "options": ["3.725", "3.815", "3.925", "3.825"],
+      "answer": 3,
+      "explanation": "Jumlahkan dari satuan: 2.450 + 1.375 = 3.825."
+    },
+    {
+      "id": "mtk-06",
+      "question": "Berapa 25% dari 200?",
+      "options": ["25", "50", "75", "100"],
+      "answer": 1,
+      "explanation": "25% sama dengan 1/4. Seperempat dari 200 adalah 50."
+    },
+    {
+      "id": "mtk-07",
+      "question": "Sudut yang besarnya tepat 90° disebut sudut ...",
+      "options": ["lancip", "tumpul", "siku-siku", "lurus"],
+      "answer": 2,
+      "explanation": "Sudut siku-siku besarnya 90°, seperti sudut pada buku."
+    },
+    {
+      "id": "mtk-08",
+      "question": "3 jam sama dengan ... menit",
+      "options": ["90", "120", "180", "240"],
+      "answer": 2,
+      "explanation": "1 jam = 60 menit, jadi 3 × 60 = 180 menit."
+    },
+    {
+      "id": "mtk-09",
+      "question": "Manakah bilangan yang paling besar?",
+      "options": ["4.099", "4.909", "4.090", "4.990"],
+      "answer": 3,
+      "explanation": "Bandingkan dari angka depan: 4.990 paling besar karena angka ratusannya 9."
+    },
+    {
+      "id": "mtk-10",
+      "question": "5 kilogram sama dengan ... gram",
+      "options": ["500", "1.000", "5.000", "50.000"],
+      "answer": 2,
+      "explanation": "1 kilogram = 1.000 gram, jadi 5 × 1.000 = 5.000 gram."
+    }
+  ]
+}

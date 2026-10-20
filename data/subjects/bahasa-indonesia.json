@@ -1,0 +1,93 @@
+{
+  "id": "bahasa-indonesia",
+  "name": "Bahasa Indonesia",
+  "emoji": "📖",
+  "theme": "sky",
+  "grade": "Kelas 3 SD",
+  "description": "Kosakata, ejaan, dan membaca cerita pendek.",
+  "order": 3,
+  "questions": [
+    {
+      "id": "bi-01",
+      "question": "Lawan kata dari \"tinggi\" adalah ...",
+      "options": ["besar", "rendah", "luas", "panjang"],
+      "answer": 1,
+      "explanation": "Tinggi berpasangan dengan rendah. Lawan kata disebut antonim."
+    },
+    {
+      "id": "bi-02",
+      "question": "Kata yang memiliki arti sama dengan \"pandai\" adalah ...",
+      "options": ["rajin", "cerdas", "kuat", "ramah"],
+      "answer": 1,
+      "explanation": "Pandai dan cerdas memiliki arti yang mirip. Kata yang artinya sama disebut sinonim."
+    },
+    {
+      "id": "bi-03",
+      "passage": "Setiap pagi, Dina membantu ibu menyiram tanaman di halaman. Ia juga memberi makan ayam peliharaannya sebelum berangkat sekolah.",
+      "question": "Apa ide pokok paragraf di atas?",
+      "options": [
+        "Dina suka bermain di halaman",
+        "Kegiatan Dina setiap pagi",
+        "Dina memelihara banyak hewan",
+        "Dina berangkat sekolah pagi-pagi"
+      ],
+      "answer": 1,
+      "explanation": "Semua kalimat menceritakan kegiatan Dina setiap pagi sebelum berangkat sekolah."
+    },
+    {
+      "id": "bi-04",
+      "question": "Penulisan kalimat yang benar adalah ...",
+      "options": [
+        "Ayah membaca koran di teras.",
+        "Ayah membaca koran diteras.",
+        "ayah membaca koran di teras.",
+        "Ayah membaca Koran di teras."
+      ],
+      "answer": 0,
+      "explanation": "Huruf pertama kalimat memakai huruf kapital, dan kata depan \"di\" ditulis terpisah dari tempat."
+    },
+    {
+      "id": "bi-05",
+      "question": "Kata baku yang benar adalah ...",
+      "options": ["apotik", "apotek", "apoték", "apotiek"],
+      "answer": 1,
+      "explanation": "Menurut kamus, bentuk baku yang benar adalah \"apotek\"."
+    },
+    {
+      "id": "bi-06",
+      "passage": "Angin berbisik lembut di telinga Rara. Dedaunan melambai seolah menyapanya.",
+      "question": "Kalimat \"Angin berbisik lembut di telinga Rara\" menggunakan gaya bahasa ...",
+      "options": ["hiperbola", "personifikasi", "metafora", "perumpamaan"],
+      "answer": 1,
+      "explanation": "Personifikasi memberi sifat manusia pada benda, yaitu angin yang bisa berbisik."
+    },
+    {
+      "id": "bi-07",
+      "question": "Penulisan kata depan yang benar terdapat pada ...",
+      "options": ["dirumah", "di rumah", "diRumah", "dirumahnya"],
+      "answer": 1,
+      "explanation": "\"Di\" sebagai kata depan penunjuk tempat ditulis terpisah: di rumah."
+    },
+    {
+      "id": "bi-08",
+      "question": "Satu baris dalam puisi disebut ...",
+      "options": ["bait", "larik", "rima", "irama"],
+      "answer": 1,
+      "explanation": "Larik adalah satu baris puisi. Kumpulan beberapa larik disebut bait."
+    },
+    {
+      "id": "bi-09",
+      "question": "Lawan kata dari \"hemat\" adalah ...",
+      "options": ["boros", "kikir", "rajin", "cermat"],
+      "answer": 0,
+      "explanation": "Hemat berarti tidak menghambur-hamburkan uang, lawannya boros."
+    },
+    {
+      "id": "bi-10",
+      "question": "Tanda baca yang tepat untuk mengakhiri kalimat tanya adalah ...",
+      "options": ["titik (.)", "koma (,)", "tanda tanya (?)", "tanda seru (!)"],
+      "answer": 2,
+      "explanation": "Kalimat tanya diakhiri dengan tanda tanya (?)."
+    }
+  ]
+}

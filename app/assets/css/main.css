@@ -1,0 +1,162 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Nunito Variable", ui-rounded, "Hiragino Maru Gothic ProN", system-ui, sans-serif;
+
+  --color-cream: #fff7ec;
+  --color-paper: #fffdf8;
+  --color-ink: #2f2418;
+  --color-ink-soft: #75624e;
+  --color-sun: #ffc233;
+  --color-grass: #31c07a;
+  --color-berry: #ec5b3a;
+  --color-sky: #3d8bfd;
+  --color-grape: #9b6bff;
+}
+
+@layer base {
+  html {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    background-color: var(--color-cream);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-synthesis-weight: none;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  ::selection {
+    background: color-mix(in oklab, var(--color-sun) 55%, white);
+  }
+}
+
+/* Subtle dotted paper backdrop. */
+.bg-dots {
+  background-image: radial-gradient(
+    color-mix(in oklab, var(--color-ink) 9%, transparent) 1px,
+    transparent 1px
+  );
+  background-size: 22px 22px;
+}
+
+/* --- Animations --- */
+@keyframes pop-in {
+  0% {
+    transform: scale(0.88);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.03);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes shake-x {
+  10%, 90% {
+    transform: translateX(-2px);
+  }
+  20%, 80% {
+    transform: translateX(3px);
+  }
+  30%, 50%, 70% {
+    transform: translateX(-5px);
+  }
+  40%, 60% {
+    transform: translateX(5px);
+  }
+}
+
+@keyframes float-y {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+@keyframes confetti-fall {
+  to {
+    transform: translate3d(var(--drift, 0px), 108vh, 0) rotate(var(--spin, 720deg));
+    opacity: 0.9;
+  }
+}
+
+.animate-pop {
+  animation: pop-in 0.35s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.animate-shake {
+  animation: shake-x 0.5s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+
+.animate-float {
+  animation: float-y 3.2s ease-in-out infinite;
+}
+
+.confetti-piece {
+  position: absolute;
+  top: -12%;
+  width: 9px;
+  height: 14px;
+  border-radius: 3px;
+  animation: confetti-fall var(--dur, 2.6s) ease-in forwards;
+  animation-delay: var(--delay, 0s);
+}
+
+/* --- Vue transitions --- */
+.rise-enter-active,
+.rise-leave-active {
+  transition: opacity 0.22s ease, transform 0.22s ease;
+}
+
+.rise-enter-from,
+.rise-leave-to {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+.q-enter-active {
+  transition: opacity 0.22s ease, transform 0.22s ease;
+}
+
+.q-leave-active {
+  transition: opacity 0.12s ease, transform 0.12s ease;
+}
+
+.q-enter-from {
+  opacity: 0;
+  transform: translateX(16px);
+}
+
+.q-leave-to {
+  opacity: 0;
+  transform: translateX(-12px);
+}
+
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.page-enter-from,
+.page-leave-to {
+  opacity: 0;
+  transform: translateY(8px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

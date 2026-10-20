@@ -40,7 +40,7 @@ const badgeStyles = computed(() => {
     type="button"
     :disabled="disabled"
     :class="[
-      'group flex w-full items-center gap-3 rounded-2xl border-[3px] px-3 py-3.5 text-left transition duration-150 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-sun/60 active:translate-y-[2px] active:shadow-none disabled:cursor-default',
+      'group flex w-full cursor-pointer items-center gap-3 rounded-2xl border-[3px] px-3 py-3.5 text-left transition duration-150 focus-visible:ring-4 focus-visible:ring-sun/60 focus-visible:outline-none active:translate-y-[2px] active:shadow-none disabled:cursor-default',
       styles,
     ]"
     @click="emit('select')"
@@ -54,7 +54,7 @@ const badgeStyles = computed(() => {
     >
       {{ label }}
     </span>
-    <span class="flex-1 text-base font-bold leading-snug">{{ text }}</span>
+    <span class="flex-1 text-base leading-snug font-bold">{{ text }}</span>
     <span v-if="state === 'correct'" class="text-lg text-emerald-600" aria-hidden="true">✓</span>
     <span v-else-if="state === 'wrong'" class="text-lg text-rose-600" aria-hidden="true">✕</span>
   </button>

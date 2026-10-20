@@ -12,13 +12,13 @@ function normalize(raw: Subject, file: string): Subject | null {
   }
 
   const questions = raw.questions.filter((question, index) => {
-    const valid
-      = typeof question?.question === 'string'
-        && Array.isArray(question.options)
-        && question.options.length >= 2
-        && Number.isInteger(question.answer)
-        && question.answer >= 0
-        && question.answer < question.options.length
+    const valid =
+      typeof question?.question === 'string' &&
+      Array.isArray(question.options) &&
+      question.options.length >= 2 &&
+      Number.isInteger(question.answer) &&
+      question.answer >= 0 &&
+      question.answer < question.options.length
 
     if (!valid) {
       console.warn(`[belajar-bareng] ${file}: soal #${index + 1} tidak valid, dilewati.`)

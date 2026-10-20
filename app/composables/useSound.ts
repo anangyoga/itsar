@@ -32,8 +32,9 @@ export function useSound() {
   function audioContext(): AudioContext | null {
     if (!import.meta.client) return null
     if (!ctx) {
-      const Ctor = window.AudioContext
-        ?? (window as unknown as { webkitAudioContext?: typeof AudioContext }).webkitAudioContext
+      const Ctor =
+        window.AudioContext ??
+        (window as unknown as { webkitAudioContext?: typeof AudioContext }).webkitAudioContext
       if (!Ctor) return null
       ctx = new Ctor()
     }
@@ -43,7 +44,12 @@ export function useSound() {
 
   function tone(
     frequency: number,
-    { at = 0, duration = 0.16, type = 'sine', gain = 0.05 }: {
+    {
+      at = 0,
+      duration = 0.16,
+      type = 'sine',
+      gain = 0.05,
+    }: {
       at?: number
       duration?: number
       type?: OscillatorType

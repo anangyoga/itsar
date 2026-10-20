@@ -77,19 +77,19 @@ useHead(() => ({
 </script>
 
 <template>
-  <div class="min-h-dvh bg-cream bg-dots">
-    <div class="mx-auto flex min-h-dvh w-full max-w-2xl flex-col px-5 pb-10 pt-5 sm:px-8">
+  <div class="bg-dots min-h-dvh bg-cream">
+    <div class="mx-auto flex min-h-dvh w-full max-w-2xl flex-col px-5 pt-5 pb-10 sm:px-8">
       <header class="flex items-center gap-3">
         <NuxtLink
           to="/"
           aria-label="Kembali ke daftar pelajaran"
-          class="grid size-10 shrink-0 place-items-center rounded-xl border-2 border-ink bg-white text-lg shadow-[0_3px_0_0_var(--color-ink)] transition focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-sun/60 active:translate-y-[2px] active:shadow-none"
+          class="grid size-10 shrink-0 place-items-center rounded-xl border-2 border-ink bg-white text-lg shadow-[0_3px_0_0_var(--color-ink)] transition focus-visible:ring-4 focus-visible:ring-sun/60 focus-visible:outline-none active:translate-y-[2px] active:shadow-none"
         >
           <span aria-hidden="true">←</span>
         </NuxtLink>
 
         <div class="min-w-0 flex-1">
-          <p class="truncate text-[11px] font-extrabold uppercase tracking-[0.14em] text-ink-soft">
+          <p class="truncate text-[11px] font-extrabold tracking-[0.14em] text-ink-soft uppercase">
             {{ subject?.name ?? 'Kuis' }}
           </p>
           <p class="truncate text-sm font-bold">
@@ -103,7 +103,7 @@ useHead(() => ({
       <main v-if="!subject" class="mt-20 text-center">
         <p class="text-5xl" aria-hidden="true">🧐</p>
         <h1 class="mt-4 text-2xl font-black">Mata pelajaran tidak ditemukan</h1>
-        <p class="mx-auto mt-2 max-w-xs text-sm font-semibold leading-relaxed text-ink-soft">
+        <p class="mx-auto mt-2 max-w-xs text-sm leading-relaxed font-semibold text-ink-soft">
           Mungkin namanya berubah atau soalnya sedang dirapikan. Yuk pilih dari daftar.
         </p>
         <NuxtLink
@@ -136,14 +136,16 @@ useHead(() => ({
 
         <Transition name="q" mode="out-in">
           <section :key="current" class="mt-4">
-            <div class="rounded-[28px] border-[3px] border-ink bg-paper p-5 shadow-[0_6px_0_0_var(--color-ink)] sm:p-7">
+            <div
+              class="rounded-[28px] border-[3px] border-ink bg-paper p-5 shadow-[0_6px_0_0_var(--color-ink)] sm:p-7"
+            >
               <blockquote
                 v-if="question.passage"
-                class="mb-4 rounded-2xl border-2 border-dashed border-ink/25 bg-white px-4 py-3 text-sm font-semibold leading-relaxed text-ink-soft"
+                class="mb-4 rounded-2xl border-2 border-dashed border-ink/25 bg-white px-4 py-3 text-sm leading-relaxed font-semibold text-ink-soft"
               >
                 {{ question.passage }}
               </blockquote>
-              <h1 class="text-balance text-xl font-extrabold leading-snug sm:text-2xl">
+              <h1 class="text-xl leading-snug font-extrabold text-balance sm:text-2xl">
                 {{ question.question }}
               </h1>
             </div>
@@ -178,14 +180,20 @@ useHead(() => ({
                 {{ isCorrect ? '✓' : '✕' }}
               </span>
               <div class="min-w-0 flex-1">
-                <p class="text-base font-extrabold" :class="isCorrect ? 'text-emerald-800' : 'text-rose-800'">
+                <p
+                  class="text-base font-extrabold"
+                  :class="isCorrect ? 'text-emerald-800' : 'text-rose-800'"
+                >
                   {{ isCorrect ? 'Tepat sekali!' : 'Belum tepat' }}
                 </p>
                 <p v-if="!isCorrect" class="mt-1 text-sm font-bold">
                   Jawaban benar:
                   <span class="text-emerald-700">{{ question.options[question.answer] }}</span>
                 </p>
-                <p v-if="question.explanation" class="mt-1.5 text-sm font-semibold leading-relaxed text-ink-soft">
+                <p
+                  v-if="question.explanation"
+                  class="mt-1.5 text-sm leading-relaxed font-semibold text-ink-soft"
+                >
                   {{ question.explanation }}
                 </p>
               </div>
@@ -193,7 +201,7 @@ useHead(() => ({
 
             <button
               type="button"
-              class="mt-4 w-full rounded-2xl border-[3px] border-ink px-5 py-3 text-base font-extrabold shadow-[0_4px_0_0_var(--color-ink)] transition focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-sun/50 active:translate-y-[2px] active:shadow-none"
+              class="mt-4 w-full rounded-2xl border-[3px] border-ink px-5 py-3 text-base font-extrabold shadow-[0_4px_0_0_var(--color-ink)] transition focus-visible:ring-4 focus-visible:ring-sun/50 focus-visible:outline-none active:translate-y-[2px] active:shadow-none"
               :class="isCorrect ? 'bg-sun' : 'bg-white'"
               @click="next"
             >
@@ -203,7 +211,17 @@ useHead(() => ({
         </Transition>
 
         <p class="mt-5 hidden text-center text-[11px] font-semibold text-ink-soft/70 sm:block">
-          Tekan <kbd class="rounded border border-ink/20 bg-white px-1.5 py-0.5 font-sans font-bold">1</kbd>–<kbd class="rounded border border-ink/20 bg-white px-1.5 py-0.5 font-sans font-bold">4</kbd> untuk memilih, lalu <kbd class="rounded border border-ink/20 bg-white px-1.5 py-0.5 font-sans font-bold">Enter</kbd> untuk lanjut.
+          Tekan
+          <kbd class="rounded border border-ink/20 bg-white px-1.5 py-0.5 font-sans font-bold"
+            >1</kbd
+          >–<kbd class="rounded border border-ink/20 bg-white px-1.5 py-0.5 font-sans font-bold"
+            >4</kbd
+          >
+          untuk memilih, lalu
+          <kbd class="rounded border border-ink/20 bg-white px-1.5 py-0.5 font-sans font-bold"
+            >Enter</kbd
+          >
+          untuk lanjut.
         </p>
       </template>
 
@@ -214,7 +232,11 @@ useHead(() => ({
           <div class="mt-3 h-5 w-1/2 animate-pulse rounded-full bg-ink/10" />
         </div>
         <div class="mt-4 grid gap-2.5">
-          <div v-for="index in 4" :key="index" class="h-16 animate-pulse rounded-2xl border-2 border-ink/10 bg-white/70" />
+          <div
+            v-for="index in 4"
+            :key="index"
+            class="h-16 animate-pulse rounded-2xl border-2 border-ink/10 bg-white/70"
+          />
         </div>
       </div>
     </div>

@@ -22,6 +22,18 @@ Buka http://localhost:3000
 > Memakai npm juga bisa: `npm install && npm run dev`.
 > Cek tipe: `pnpm typecheck`.
 
+## Format kode
+
+Proyek memakai [Prettier](https://prettier.io) dengan plugin pengurut kelas Tailwind.
+
+```bash
+pnpm format        # rapikan semua file
+pnpm format:check  # cek format tanpa mengubah file
+```
+
+Di VS Code/Cursor, format otomatis saat menyimpan sudah diatur lewat
+`.vscode/settings.json` — cukup setujui rekomendasi ekstensi Prettier saat membuka proyek.
+
 ## Menambah / mengubah soal
 
 Semua soal ada di **`data/subjects/*.json`** — satu file per mata pelajaran.
@@ -51,26 +63,26 @@ File baru otomatis muncul di beranda, tidak perlu mengubah kode.
 
 ### Aturan field
 
-| Field         | Wajib | Keterangan                                                        |
-| ------------- | ----- | ----------------------------------------------------------------- |
-| `id`          | ✅    | Huruf kecil, tanpa spasi (dipakai di URL).                        |
-| `name`        | ✅    | Nama yang tampil di beranda.                                      |
-| `emoji`       | ✅    | Ikon mata pelajaran.                                              |
-| `theme`       | –     | `sun`, `sky`, `grass`, `grape`, atau `berry`. Default `sun`.      |
-| `grade`       | –     | Contoh: `Kelas 3 SD`.                                             |
-| `description` | –     | Belum ditampilkan, aman untuk catatan.                            |
-| `order`       | –     | Angka kecil tampil lebih dulu.                                    |
-| `questions`   | ✅    | Minimal 1 soal.                                                   |
+| Field         | Wajib | Keterangan                                                   |
+| ------------- | ----- | ------------------------------------------------------------ |
+| `id`          | ✅    | Huruf kecil, tanpa spasi (dipakai di URL).                   |
+| `name`        | ✅    | Nama yang tampil di beranda.                                 |
+| `emoji`       | ✅    | Ikon mata pelajaran.                                         |
+| `theme`       | –     | `sun`, `sky`, `grass`, `grape`, atau `berry`. Default `sun`. |
+| `grade`       | –     | Contoh: `Kelas 3 SD`.                                        |
+| `description` | –     | Belum ditampilkan, aman untuk catatan.                       |
+| `order`       | –     | Angka kecil tampil lebih dulu.                               |
+| `questions`   | ✅    | Minimal 1 soal.                                              |
 
 Per soal:
 
-| Field         | Wajib | Keterangan                                                  |
-| ------------- | ----- | ----------------------------------------------------------- |
-| `question`    | ✅    | Pertanyaan.                                                 |
-| `options`     | ✅    | 2–6 pilihan jawaban.                                        |
-| `answer`      | ✅    | **Index** jawaban benar, dimulai dari `0`.                  |
-| `explanation` | –     | Penjelasan yang muncul setelah menjawab.                     |
-| `passage`     | –     | Teks bacaan yang tampil di atas pertanyaan (untuk cerita).  |
+| Field         | Wajib | Keterangan                                                 |
+| ------------- | ----- | ---------------------------------------------------------- |
+| `question`    | ✅    | Pertanyaan.                                                |
+| `options`     | ✅    | 2–6 pilihan jawaban.                                       |
+| `answer`      | ✅    | **Index** jawaban benar, dimulai dari `0`.                 |
+| `explanation` | –     | Penjelasan yang muncul setelah menjawab.                   |
+| `passage`     | –     | Teks bacaan yang tampil di atas pertanyaan (untuk cerita). |
 
 > ⚠️ `answer: 0` berarti pilihan **pertama** benar. Kalau menambah pilihan baru,
 > pastikan index jawaban benar ikut disesuaikan.

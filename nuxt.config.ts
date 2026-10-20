@@ -24,7 +24,11 @@ export default defineNuxtConfig({
       htmlAttrs: { lang: 'id' },
       title: 'Belajar Bareng — Kuis Seru untuk Si Kecil',
       meta: [
-        { name: 'description', content: 'Aplikasi kuis sederhana untuk belajar anak. Pilih mata pelajaran, jawab soal, kumpulkan bintang.' },
+        {
+          name: 'description',
+          content:
+            'Aplikasi kuis sederhana untuk belajar anak. Pilih mata pelajaran, jawab soal, kumpulkan bintang.',
+        },
         { name: 'theme-color', content: '#FFF7EC' },
       ],
       link: [

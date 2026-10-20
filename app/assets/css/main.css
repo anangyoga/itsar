@@ -1,7 +1,7 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @theme {
-  --font-sans: "Nunito Variable", ui-rounded, "Hiragino Maru Gothic ProN", system-ui, sans-serif;
+  --font-sans: 'Nunito Variable', ui-rounded, 'Hiragino Maru Gothic ProN', system-ui, sans-serif;
 
   --color-cream: #fff7ec;
   --color-paper: #fffdf8;
@@ -58,22 +58,28 @@
 }
 
 @keyframes shake-x {
-  10%, 90% {
+  10%,
+  90% {
     transform: translateX(-2px);
   }
-  20%, 80% {
+  20%,
+  80% {
     transform: translateX(3px);
   }
-  30%, 50%, 70% {
+  30%,
+  50%,
+  70% {
     transform: translateX(-5px);
   }
-  40%, 60% {
+  40%,
+  60% {
     transform: translateX(5px);
   }
 }
 
 @keyframes float-y {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0);
   }
   50% {
@@ -113,7 +119,9 @@
 /* --- Vue transitions --- */
 .rise-enter-active,
 .rise-leave-active {
-  transition: opacity 0.22s ease, transform 0.22s ease;
+  transition:
+    opacity 0.22s ease,
+    transform 0.22s ease;
 }
 
 .rise-enter-from,
@@ -123,11 +131,15 @@
 }
 
 .q-enter-active {
-  transition: opacity 0.22s ease, transform 0.22s ease;
+  transition:
+    opacity 0.22s ease,
+    transform 0.22s ease;
 }
 
 .q-leave-active {
-  transition: opacity 0.12s ease, transform 0.12s ease;
+  transition:
+    opacity 0.12s ease,
+    transform 0.12s ease;
 }
 
 .q-enter-from {
@@ -142,7 +154,9 @@
 
 .page-enter-active,
 .page-leave-active {
-  transition: opacity 0.2s ease, transform 0.2s ease;
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
 }
 
 .page-enter-from,

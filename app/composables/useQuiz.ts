@@ -22,14 +22,12 @@ export function useQuiz(subject: Ref<Subject | undefined>) {
   const question = computed<QuizQuestion | undefined>(() => questions.value[current.value])
   const isAnswered = computed(() => picked.value !== null)
   const isLast = computed(() => current.value >= total.value - 1)
-  const isCorrect = computed(
-    () => picked.value !== null && picked.value === question.value?.answer,
-  )
+  const isCorrect = computed(() => picked.value !== null && picked.value === question.value?.answer)
   const correctCount = computed(
     () => records.value.filter(item => item.picked === item.question.answer).length,
   )
-  const wrongRecords = computed(
-    () => records.value.filter(item => item.picked !== item.question.answer),
+  const wrongRecords = computed(() =>
+    records.value.filter(item => item.picked !== item.question.answer),
   )
   const score = computed(() =>
     total.value === 0 ? 0 : Math.round((correctCount.value / total.value) * 100),
@@ -40,7 +38,7 @@ export function useQuiz(subject: Ref<Subject | undefined>) {
 
   function start(source?: Question[], options: { fullRound?: boolean } = {}) {
     const pool = source ?? subject.value?.questions ?? []
-    questions.value = shuffle(pool).map((item) => {
+    questions.value = shuffle(pool).map(item => {
       const order = shuffle(item.options.map((_, index) => index))
       return {
         ...item,

@@ -1,0 +1,14 @@
+# Dependencies
+node_modules
+
+# Build output
+.nuxt
+.output
+.data
+dist
+
+# Generated / managed files
+pnpm-lock.yaml
+
+# Quiz content
+data

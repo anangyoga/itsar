@@ -23,10 +23,15 @@ export function formatDuration(totalSeconds: number): string {
   return `${minutes}:${seconds.toString().padStart(2, '0')}`
 }
 
-export function scoreMessage(score: number): { title: string, subtitle: string } {
+export function scoreMessage(score: number): { title: string; subtitle: string } {
   if (score === 100) return { title: 'Sempurna!', subtitle: 'Semua jawaban benar. Kamu hebat!' }
-  if (score >= 80) return { title: 'Keren banget!', subtitle: 'Hampir semuanya benar. Sedikit lagi!' }
-  if (score >= 60) return { title: 'Bagus!', subtitle: 'Kamu sudah paham sebagian besar. Ayo coba lagi!' }
+  if (score >= 80)
+    return { title: 'Keren banget!', subtitle: 'Hampir semuanya benar. Sedikit lagi!' }
+  if (score >= 60)
+    return { title: 'Bagus!', subtitle: 'Kamu sudah paham sebagian besar. Ayo coba lagi!' }
   if (score > 0) return { title: 'Semangat!', subtitle: 'Setiap latihan bikin kamu makin pintar.' }
-  return { title: 'Jangan menyerah!', subtitle: 'Baca lagi penjelasannya, lalu coba sekali lagi ya.' }
+  return {
+    title: 'Jangan menyerah!',
+    subtitle: 'Baca lagi penjelasannya, lalu coba sekali lagi ya.',
+  }
 }

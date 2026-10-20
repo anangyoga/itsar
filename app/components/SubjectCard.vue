@@ -13,7 +13,7 @@ const stars = computed(() => starsFor(props.best))
 <template>
   <NuxtLink
     :to="`/quiz/${subject.id}`"
-    class="group relative flex items-center gap-4 rounded-[26px] border-[3px] border-ink bg-white p-4 shadow-[0_6px_0_0_var(--color-ink)] transition duration-150 hover:-translate-y-0.5 hover:shadow-[0_8px_0_0_var(--color-ink)] focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-sun/50 active:translate-y-[3px] active:shadow-[0_3px_0_0_var(--color-ink)]"
+    class="group relative flex items-center gap-4 rounded-[26px] border-[3px] border-ink bg-white p-4 shadow-[0_6px_0_0_var(--color-ink)] transition duration-150 hover:-translate-y-0.5 hover:shadow-[0_8px_0_0_var(--color-ink)] focus-visible:ring-4 focus-visible:ring-sun/50 focus-visible:outline-none active:translate-y-[3px] active:shadow-[0_3px_0_0_var(--color-ink)]"
   >
     <span
       aria-hidden="true"
@@ -24,16 +24,22 @@ const stars = computed(() => starsFor(props.best))
     </span>
 
     <span class="min-w-0 flex-1">
-      <span class="block truncate text-lg font-extrabold leading-tight">{{ subject.name }}</span>
+      <span class="block truncate text-lg leading-tight font-extrabold">{{ subject.name }}</span>
       <span class="mt-0.5 block text-xs font-bold text-ink-soft">
         {{ subject.questions.length }} soal<span v-if="subject.grade"> · {{ subject.grade }}</span>
       </span>
 
-      <span v-if="best !== undefined" class="mt-2 flex items-center gap-1.5 text-xs font-extrabold" :class="theme.text">
+      <span
+        v-if="best !== undefined"
+        class="mt-2 flex items-center gap-1.5 text-xs font-extrabold"
+        :class="theme.text"
+      >
         <span aria-hidden="true">{{ stars > 0 ? '⭐'.repeat(stars) : '☆' }}</span>
         <span>Terbaik {{ best }}%</span>
       </span>
-      <span v-else class="mt-2 inline-block text-xs font-extrabold text-ink-soft/60">Belum dicoba</span>
+      <span v-else class="mt-2 inline-block text-xs font-extrabold text-ink-soft/60"
+        >Belum dicoba</span
+      >
     </span>
 
     <span

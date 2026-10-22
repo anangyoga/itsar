@@ -1,0 +1,132 @@
+{
+  "id": "buah",
+  "name": "Buah-buahan",
+  "nameEn": "Fruits",
+  "emoji": "🍎",
+  "theme": "berry",
+  "description": "Nama buah-buahan dalam bahasa Inggris.",
+  "order": 1,
+  "words": [
+    {
+      "id": "buah-01",
+      "prompt": "apel",
+      "answer": "apple",
+      "example": "I eat an apple every morning."
+    },
+    {
+      "id": "buah-02",
+      "prompt": "pisang",
+      "answer": "banana",
+      "example": "The monkey is eating a banana."
+    },
+    {
+      "id": "buah-03",
+      "prompt": "jeruk",
+      "answer": "orange",
+      "example": "This orange is sweet and juicy."
+    },
+    {
+      "id": "buah-04",
+      "prompt": "mangga",
+      "answer": "mango",
+      "example": "My mother bought a ripe mango."
+    },
+    {
+      "id": "buah-05",
+      "prompt": "anggur",
+      "answer": "grape",
+      "example": "She put a grape in her mouth."
+    },
+    {
+      "id": "buah-06",
+      "prompt": "semangka",
+      "answer": "watermelon",
+      "example": "We share a big watermelon."
+    },
+    {
+      "id": "buah-07",
+      "prompt": "stroberi",
+      "answer": "strawberry",
+      "example": "The strawberry is red and sweet."
+    },
+    {
+      "id": "buah-08",
+      "prompt": "nanas",
+      "answer": "pineapple",
+      "example": "Pineapple grows in a warm place."
+    },
+    {
+      "id": "buah-09",
+      "prompt": "pepaya",
+      "answer": "papaya",
+      "example": "Papaya is good for your stomach."
+    },
+    {
+      "id": "buah-10",
+      "prompt": "melon",
+      "answer": "melon",
+      "example": "This melon smells very sweet."
+    },
+    {
+      "id": "buah-11",
+      "prompt": "pir",
+      "answer": "pear",
+      "example": "A pear is shaped like a bell."
+    },
+    {
+      "id": "buah-12",
+      "prompt": "persik",
+      "answer": "peach",
+      "example": "The peach has soft skin."
+    },
+    {
+      "id": "buah-13",
+      "prompt": "ceri",
+      "answer": "cherry",
+      "example": "There is a cherry on top of the cake."
+    },
+    {
+      "id": "buah-14",
+      "prompt": "manggis",
+      "answer": "mangosteen",
+      "example": "Mangosteen is called the queen of fruits."
+    },
+    {
+      "id": "buah-15",
+      "prompt": "kelapa",
+      "answer": "coconut",
+      "example": "We drink coconut water."
+    },
+    {
+      "id": "buah-16",
+      "prompt": "rambutan",
+      "answer": "rambutan",
+      "example": "Rambutan is a tropical fruit."
+    },
+    {
+      "id": "buah-17",
+      "prompt": "durian",
+      "answer": "durian",
+      "example": "Durian has a strong smell."
+    },
+    {
+      "id": "buah-18",
+      "prompt": "salak",
+      "answer": "snake fruit",
+      "accept": ["salacca"],
+      "example": "Salak is also called snake fruit."
+    },
+    {
+      "id": "buah-19",
+      "prompt": "jambu biji",
+      "answer": "guava",
+      "example": "Guava is full of vitamin C."
+    },
+    {
+      "id": "buah-20",
+      "prompt": "nangka",
+      "answer": "jackfruit",
+      "example": "Jackfruit is a very large fruit."
+    }
+  ]
+}

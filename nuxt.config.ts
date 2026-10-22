@@ -2,12 +2,19 @@ import { readFileSync, readdirSync } from 'node:fs'
 import { join } from 'node:path'
 import tailwindcss from '@tailwindcss/vite'
 import type { Subject } from './app/types/quiz'
+import type { VocabCategory } from './app/types/vocab'
 
 const subjectsDir = join(process.cwd(), 'data/subjects')
 const subjectRoutes = readdirSync(subjectsDir)
   .filter(file => file.endsWith('.json'))
   .map(file => JSON.parse(readFileSync(join(subjectsDir, file), 'utf8')) as Subject)
   .map(subject => `/quiz/${subject.id}`)
+
+const vocabDir = join(process.cwd(), 'data/vocab')
+const vocabRoutes = readdirSync(vocabDir)
+  .filter(file => file.endsWith('.json'))
+  .map(file => JSON.parse(readFileSync(join(vocabDir, file), 'utf8')) as VocabCategory)
+  .map(category => `/vocab/${category.id}`)
 
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
@@ -43,7 +50,7 @@ export default defineNuxtConfig({
 
   nitro: {
     prerender: {
-      routes: ['/', ...subjectRoutes],
+      routes: ['/', '/vocab', ...subjectRoutes, ...vocabRoutes],
     },
   },
 })

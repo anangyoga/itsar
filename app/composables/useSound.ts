@@ -87,6 +87,12 @@ export function useSound() {
     tone(196, { at: 0.12, type: 'triangle', duration: 0.22, gain: 0.04 })
   }
 
+  /** Gentle two-note nudge for a spelling that is almost right. */
+  function playRetry() {
+    tone(392, { duration: 0.12, gain: 0.04 })
+    tone(440, { at: 0.1, duration: 0.16, gain: 0.04 })
+  }
+
   function playFinish() {
     const notes = [523.25, 659.25, 783.99, 1046.5]
     notes.forEach((note, index) => tone(note, { at: index * 0.11, duration: 0.24 }))
@@ -96,5 +102,14 @@ export function useSound() {
     tone(587.33, { duration: 0.06, gain: 0.03 })
   }
 
-  return { muted, toggle, restore, playCorrect, playWrong, playFinish, playTap }
+  return {
+    muted,
+    toggle,
+    restore,
+    playCorrect,
+    playWrong,
+    playRetry,
+    playFinish,
+    playTap,
+  }
 }

@@ -7,6 +7,11 @@ Aplikasi kuis sederhana untuk anak belajar. Dibangun dengan **Nuxt 4**, **Vue 3*
 - Ada umpan balik langsung + penjelasan jawaban
 - Skor terbaik, bintang, dan jumlah percobaan disimpan di `localStorage`
 - Bisa "latih soal yang salah" setelah kuis selesai
+- **Latihan Menulis**: 545 kata dalam 21 kategori (bagian tubuh, hewan, tempat, makanan,
+  minuman, kendaraan, cuaca, dan lainnya)
+  - Ejaan dicek tanpa peduli huruf besar/kecil
+  - Kalau hanya salah satu huruf, dapat satu kesempatan memperbaiki
+  - Kata yang pernah benar ditandai "dikuasai"
 - Suara benar/salah memakai WebAudio (tanpa file audio), bisa dimatikan
 - Responsif, ramah keyboard (`1`–`4` untuk memilih, `Enter` untuk lanjut)
 
@@ -89,19 +94,81 @@ Per soal:
 
 Soal yang formatnya salah akan dilewati dan muncul peringatan di terminal saat dev.
 
+## Menambah / mengubah latihan menulis
+
+Data latihan menulis ada di **`data/vocab/*.json`** — satu file per kategori.
+Sama seperti soal, file baru otomatis muncul di halaman `/vocab`.
+
+```json
+{
+  "id": "buah",
+  "name": "Buah-buahan",
+  "nameEn": "Fruits",
+  "emoji": "🍎",
+  "theme": "berry",
+  "description": "Nama buah-buahan dalam bahasa Inggris.",
+  "order": 1,
+  "words": [
+    {
+      "id": "buah-01",
+      "prompt": "apel",
+      "answer": "apple",
+      "example": "I eat an apple every morning."
+    },
+    {
+      "id": "buah-02",
+      "prompt": "salak",
+      "answer": "snake fruit",
+      "accept": ["salacca"],
+      "example": "Salak is also called snake fruit."
+    }
+  ]
+}
+```
+
+| Field         | Wajib | Keterangan                                                   |
+| ------------- | ----- | ------------------------------------------------------------ |
+| `id`          | ✅    | Huruf kecil, tanpa spasi (dipakai di URL).                   |
+| `name`        | ✅    | Nama kategori yang tampil.                                   |
+| `nameEn`      | –     | Nama kategori dalam bahasa Inggris.                          |
+| `emoji`       | –     | Ikon kategori. Default `📚`.                                 |
+| `theme`       | –     | `sun`, `sky`, `grass`, `grape`, atau `berry`. Default `sun`. |
+| `description` | –     | Catatan kategori (belum ditampilkan).                        |
+| `order`       | –     | Angka kecil tampil lebih dulu.                               |
+| `words`       | ✅    | Minimal 1 kata.                                              |
+
+Per kata:
+
+| Field     | Wajib | Keterangan                                        |
+| --------- | ----- | ------------------------------------------------- |
+| `prompt`  | ✅    | Kata Indonesia yang ditanyakan (tunggal).         |
+| `answer`  | ✅    | Ejaan bahasa Inggris yang benar (tunggal).        |
+| `id`      | –     | ID unik untuk menandai kata yang sudah dikuasai.  |
+| `accept`  | –     | Ejaan lain yang juga diterima, mis. `["fridge"]`. |
+| `example` | –     | Contoh kalimat yang muncul setelah menjawab.      |
+
+> Pengecekan tidak peduli huruf besar/kecil, spasi berlebih, atau tanda kutip
+> melengkung. Jawaban harus tetap **satu kata/bentuk yang sama** — bentuk jamak
+> tidak otomatis diterima kecuali ditambahkan ke `accept`.
+
 ## Struktur proyek
 
 ```
-data/subjects/        # 📝 data soal (JSON)
+data/subjects/        # 📝 data soal pilihan ganda (JSON)
+data/vocab/           # ✍️ data latihan menulis per kategori (JSON)
 app/
   assets/css/main.css # tema + animasi Tailwind
-  components/         # SubjectCard, AnswerButton, QuizProgress, QuizResult, SoundToggle
-  composables/        # useSubjects, useQuiz, useProgress, useSound
+  components/         # SubjectCard, AnswerButton, QuizProgress, QuizResult, SoundToggle,
+                      # VocabCategoryCard, VocabResult, StarConfetti
+  composables/        # useSubjects, useQuiz, useProgress, useSound,
+                      # useVocab, useSpellingQuiz, useVocabProgress
   pages/
     index.vue         # beranda
-    quiz/[subject].vue# halaman kuis
-  types/quiz.ts       # tipe data
-  utils/              # shuffle, bintang, tema warna
+    quiz/[subject].vue# halaman kuis pilihan ganda
+    vocab/index.vue   # daftar kategori latihan menulis
+    vocab/[category].vue # halaman latihan menulis
+  types/              # tipe data kuis & vocab
+  utils/              # shuffle, bintang, tema warna, normalisasi ejaan
 nuxt.config.ts
 ```
 

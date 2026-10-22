@@ -1,0 +1,135 @@
+{
+  "id": "rumah",
+  "name": "Rumah",
+  "nameEn": "House",
+  "emoji": "🏠",
+  "theme": "sky",
+  "description": "Benda-benda yang ada di rumah dalam bahasa Inggris.",
+  "order": 2,
+  "words": [
+    {
+      "id": "rumah-01",
+      "prompt": "pintu",
+      "answer": "door",
+      "example": "Please close the door."
+    },
+    {
+      "id": "rumah-02",
+      "prompt": "kursi",
+      "answer": "chair",
+      "example": "He sits on a chair."
+    },
+    {
+      "id": "rumah-03",
+      "prompt": "jendela",
+      "answer": "window",
+      "example": "Open the window, please."
+    },
+    {
+      "id": "rumah-04",
+      "prompt": "meja",
+      "answer": "table",
+      "example": "The book is on the table."
+    },
+    {
+      "id": "rumah-05",
+      "prompt": "tempat tidur",
+      "answer": "bed",
+      "example": "I sleep on a bed."
+    },
+    {
+      "id": "rumah-06",
+      "prompt": "lemari",
+      "answer": "cupboard",
+      "accept": ["wardrobe", "closet"],
+      "example": "The clothes are in the cupboard."
+    },
+    {
+      "id": "rumah-07",
+      "prompt": "sofa",
+      "answer": "sofa",
+      "accept": ["couch"],
+      "example": "We watch TV on the sofa."
+    },
+    {
+      "id": "rumah-08",
+      "prompt": "lampu",
+      "answer": "lamp",
+      "example": "Turn on the lamp."
+    },
+    {
+      "id": "rumah-09",
+      "prompt": "karpet",
+      "answer": "carpet",
+      "accept": ["rug"],
+      "example": "The carpet is soft."
+    },
+    {
+      "id": "rumah-10",
+      "prompt": "dapur",
+      "answer": "kitchen",
+      "example": "Mother cooks in the kitchen."
+    },
+    {
+      "id": "rumah-11",
+      "prompt": "kamar mandi",
+      "answer": "bathroom",
+      "example": "The bathroom is clean."
+    },
+    {
+      "id": "rumah-12",
+      "prompt": "cermin",
+      "answer": "mirror",
+      "example": "She looks in the mirror."
+    },
+    {
+      "id": "rumah-13",
+      "prompt": "bantal",
+      "answer": "pillow",
+      "example": "My pillow is very soft."
+    },
+    {
+      "id": "rumah-14",
+      "prompt": "selimut",
+      "answer": "blanket",
+      "example": "I use a blanket when it is cold."
+    },
+    {
+      "id": "rumah-15",
+      "prompt": "atap",
+      "answer": "roof",
+      "example": "The roof is made of tiles."
+    },
+    {
+      "id": "rumah-16",
+      "prompt": "tangga",
+      "answer": "stairs",
+      "example": "He walks up the stairs."
+    },
+    {
+      "id": "rumah-17",
+      "prompt": "sapu",
+      "answer": "broom",
+      "example": "She sweeps the floor with a broom."
+    },
+    {
+      "id": "rumah-18",
+      "prompt": "ember",
+      "answer": "bucket",
+      "example": "Fill the bucket with water."
+    },
+    {
+      "id": "rumah-19",
+      "prompt": "kompor",
+      "answer": "stove",
+      "example": "The stove is hot."
+    },
+    {
+      "id": "rumah-20",
+      "prompt": "kulkas",
+      "answer": "refrigerator",
+      "accept": ["fridge"],
+      "example": "The milk is in the refrigerator."
+    }
+  ]
+}

@@ -1,6 +1,8 @@
 <script setup lang="ts">
 const { subjects } = useSubjects()
+const { categories: vocabCategories } = useVocab()
 const { progress, load } = useProgress()
+const { progress: vocabProgress, load: loadVocabProgress } = useVocabProgress()
 
 const greeting = ref('Halo')
 
@@ -8,8 +10,19 @@ const totalStars = computed(() =>
   Object.values(progress.value).reduce((sum, item) => sum + starsFor(item.best), 0),
 )
 
+const vocabWords = computed(() =>
+  vocabCategories.reduce((sum, category) => sum + category.words.length, 0),
+)
+const vocabMastered = computed(() =>
+  vocabCategories.reduce((sum, category) => {
+    const mastered = new Set(vocabProgress.value[category.id]?.mastered ?? [])
+    return sum + category.words.filter(word => mastered.has(word.id)).length
+  }, 0),
+)
+
 onMounted(() => {
   load()
+  loadVocabProgress()
 
   const hour = new Date().getHours()
   greeting.value =
@@ -63,7 +76,8 @@ onMounted(() => {
         </h1>
 
         <p class="mt-4 max-w-md text-base leading-relaxed font-semibold text-ink-soft">
-          Pilih mata pelajaran, jawab soal-soalnya, dan kumpulkan bintang. Tidak perlu buru-buru.
+          Pilih mata pelajaran atau latihan menulis, jawab soalnya, dan kumpulkan bintang. Tidak
+          perlu buru-buru.
         </p>
 
         <div
@@ -78,6 +92,38 @@ onMounted(() => {
           <span class="absolute -top-4 -left-7 text-3xl">✨</span>
           <span class="absolute -right-4 -bottom-2 text-2xl">📚</span>
         </div>
+      </section>
+
+      <section v-if="vocabWords > 0" class="mt-8 sm:mt-10">
+        <NuxtLink
+          to="/vocab"
+          class="group flex items-center gap-4 rounded-[26px] border-[3px] border-ink bg-white p-4 shadow-[0_6px_0_0_var(--color-ink)] transition duration-150 hover:-translate-y-0.5 hover:shadow-[0_8px_0_0_var(--color-ink)] focus-visible:ring-4 focus-visible:ring-sun/50 focus-visible:outline-none active:translate-y-[3px] active:shadow-[0_3px_0_0_var(--color-ink)]"
+        >
+          <span
+            aria-hidden="true"
+            class="grid size-14 shrink-0 place-items-center rounded-2xl border-[3px] border-ink bg-grape text-2xl transition group-hover:rotate-[-4deg]"
+          >
+            ✍️
+          </span>
+
+          <span class="min-w-0 flex-1">
+            <span class="block text-lg leading-tight font-extrabold">Latihan Menulis</span>
+            <span class="mt-0.5 block text-xs font-bold text-ink-soft">
+              Tulis nama benda dalam bahasa Inggris
+            </span>
+            <span class="mt-2 flex items-center gap-1.5 text-xs font-extrabold text-violet-700">
+              <span aria-hidden="true">✏️</span>
+              <span>{{ vocabMastered }} dari {{ vocabWords }} kata dikuasai</span>
+            </span>
+          </span>
+
+          <span
+            aria-hidden="true"
+            class="grid size-9 shrink-0 place-items-center rounded-full border-2 border-ink bg-paper text-sm font-black transition group-hover:bg-grape"
+          >
+            →
+          </span>
+        </NuxtLink>
       </section>
 
       <section class="mt-8 sm:mt-11" aria-labelledby="subject-heading">
